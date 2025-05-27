@@ -23,7 +23,7 @@ sections:
         - name: "Attendees"
           description: "4,000+"
         - name: "Venue"
-          description: "Moscone Center"
+          description: "USFQ"
         - name: "Location"
           description: "Quito, Ecuador"
     design:
