@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: "Home"
 date: 2023-10-24
 type: landing
 
@@ -10,11 +10,11 @@ design:
 sections:
   - block: hero-with-stats
     content:
-      title: AI SUMMIT 2024
-      text: "**BUILD THE FUTURE TOGETHER WITH AI**"
-      details: "May 16, 2024. \n\nEasily create your conference website with [Hugo Blox](https://hugoblox.com/templates/)"
+      title: SALA '26
+      text: "**Summit of Ai in LatAm**"
+      details: "March, 2026."
       primary_action:
-        text: Get Tickets
+        text: Registration available soon
         url: https://www.eventbrite.com/
         icon: ticket
       items:
@@ -25,32 +25,32 @@ sections:
         - name: "Venue"
           description: "Moscone Center"
         - name: "Location"
-          description: "San Francisco"
+          description: "Quito, Ecuador"
     design:
       spacing:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
       # For full-screen, add `min-h-screen` below
       css_class: "bg-gradient-to-r from-rose-100 to-teal-100"
-#      background:
-#        color: ""
-#        image:
-#          # Add your image background to `assets/media/`.
-#          filename: ""
-#          filters:
-#            brightness: 1.0
-  - block: countdown
-    content:
-      title: "Hurry, Limited Availability"
-      text: "EARLY BIRD PRICING ENDS IN"
-      text_after: "SAVE UP TO $1,000!"
-      date: '2000-01-01 00:00:00'
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-primary-500"
-      # Reduce spacing
-      spacing:
-        padding: ["1rem", 0, "1rem", 0]
+  #      background:
+  #        color: ""
+  #        image:
+  #          # Add your image background to `assets/media/`.
+  #          filename: ""
+  #          filters:
+  #            brightness: 1.0
+  # - block: countdown
+  #   content:
+  #     title: "Hurry, Limited Availability"
+  #     text: "EARLY BIRD PRICING ENDS IN"
+  #     text_after: "SAVE UP TO $1,000!"
+  #     date: "2000-01-01 00:00:00"
+  #   design:
+  #     # Section background color (CSS class)
+  #     css_class: "bg-primary-500"
+  #     # Reduce spacing
+  #     spacing:
+  #       padding: ["1rem", 0, "1rem", 0]
   - block: cta-image-paragraph
     id: about
     content:
@@ -78,7 +78,7 @@ sections:
     content:
       title: Speakers
       text: ""
-      user_groups: ['Speakers']
+      user_groups: ["Speakers"]
     design:
       show_role: true
       show_social: true
@@ -91,7 +91,7 @@ sections:
         **DAY 1**
         {style="padding-top: 2rem"}
         {{< table path="schedule.csv" header="true" >}}
-        
+
         **DAY 2**
         {style="padding-top: 2rem"}
 
@@ -115,7 +115,7 @@ sections:
       title: "Sponsors Making This Possible"
       text: "Thanks to the following sponsors for making this incredible event possible!"
       # Image path relative to assets/media/ folder
-      logo_folder: 'sponsors/'
+      logo_folder: "sponsors/"
     design:
       card:
         # Card background color (CSS class)
@@ -129,7 +129,7 @@ sections:
       button:
         text: "Subscribe"
       convertkit:
-        form_id: ''
+        form_id: ""
         msg_subscribed: "Success! Please check your email to confirm your subscription."
     design:
       card:
