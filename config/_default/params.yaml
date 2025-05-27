@@ -5,7 +5,7 @@
 
 # Appearance
 appearance:
-  mode: light
+  mode: dark
   color: indigo
 
 # SEO
@@ -14,9 +14,10 @@ marketing:
     site_type: Organization
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo conference theme powered by Hugo Blox website builder.'
+    description: 'SALA.ai - Your living room conference for AI in Latin America.'
     twitter: 'GetResearchDev'
   analytics:
+    google_tag_manager: 'G-HNCJ96GS56'
     google_analytics: ''
     baidu_tongji: ''
     plausible: ''
@@ -39,7 +40,7 @@ header:
       filename: "logo.svg"
     button:
       enable: true
-      text: "Get Tickets"
+      text: "Register Soon"
       url: "https://www.eventbrite.com/"
     show_search: false
     show_theme_chooser: false
@@ -49,12 +50,12 @@ footer:
   blox: "sitemap"
   content:
     logo:
-      text: "AI SUMMIT 2024"
-    tagline: "BUILD THE FUTURE TOGETHER WITH AI"
+      text: "SALA 2026"
+    tagline: "Summit of AI in LatAm"
   design:
     columns: 4
   copyright:
-    notice: '© {year} My Company'
+    notice: '© {year} SALA'
 
 # Localization
 locale:
