@@ -15,10 +15,10 @@ marketing:
     local_business_type: ''
     org_name: ''
     description: 'SALA.ai - Your living room conference for AI in Latin America.'
-    twitter: 'GetResearchDev'
+    twitter: 'TODO'
   analytics:
     google_tag_manager: 'G-HNCJ96GS56'
-    google_analytics: ''
+    google_analytics: 'G-HNCJ96GS56'
     baidu_tongji: ''
     plausible: ''
     fathom: ''
@@ -37,11 +37,11 @@ header:
     logo:
       text: ""
       # Logo filename in `assets/media/` folder
-      filename: "logo.svg"
+      filename: "logo_white.png"
     button:
       enable: true
       text: "Register Soon"
-      url: "https://www.eventbrite.com/"
+      url: "lasala.ai/register"
     show_search: false
     show_theme_chooser: false
 
@@ -50,7 +50,7 @@ footer:
   blox: "sitemap"
   content:
     logo:
-      text: "SALA 2026"
+      text: "SALA '26"
     tagline: "Summit of AI in LatAm"
   design:
     columns: 4

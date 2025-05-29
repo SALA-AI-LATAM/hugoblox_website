@@ -11,17 +11,17 @@ sections:
   - block: hero-with-stats
     content:
       title: SALA '26
-      text: "**Summit of Ai in LatAm**"
+      text: "RIIAA is now SALA:**Summit of Ai in LatAm**"
       details: "March, 2026."
       primary_action:
-        text: Registration available soon
-        url: https://www.eventbrite.com/
+        text: Registration available late '25
+        url: lasala.ai/register
         icon: ticket
       items:
-        - name: "Speakers"
-          description: "300+"
-        - name: "Attendees"
-          description: "4,000+"
+        #- name: "Speakers"
+        #  description: "300+"
+        #- name: "Attendees"
+        #  description: "4,000+"
         - name: "Venue"
           description: "USFQ"
         - name: "Location"
