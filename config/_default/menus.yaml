@@ -38,8 +38,8 @@ footer:
     name: Organization
     url: /organization
   - parent: whoweare
-    name: Our Logo
-    url: /logo
+    name: Our Brand
+    url: /brand
       #- identifier: legal
       #  name: Legal
       #  weight: 3
