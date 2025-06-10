@@ -40,7 +40,7 @@ header:
       filename: "logo_white.png"
     button:
       enable: true
-      text: "Register Soon"
+      text: "Register"
       url: "/register"
     show_search: false
     show_theme_chooser: false

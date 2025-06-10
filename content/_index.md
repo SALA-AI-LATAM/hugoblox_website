@@ -6,26 +6,29 @@ type: landing
 design:
   # Default section spacing
   spacing: "6rem"
+  background:
+    image:
+      filename: iridiscenceDark.jpg
 
 sections:
   - block: hero-with-stats
     content:
       title: SALA '26
-      text: "RIIAA is now SALA: **Summit of Ai in LatAm**"
-      details: "March, 2026."
+      text: "**Summit of Ai in LatAm**"
+      details: "March, 2026; USFQ - Quito, Ecuador."
       primary_action:
         text: Registration available late '25
         #url: lasala.ai/register
         #icon: ticket
-      items:
-        #- name: "Speakers"
-        #  description: "300+"
-        #- name: "Attendees"
-        #  description: "4,000+"
-        - name: "Venue"
-          description: "USFQ"
-        - name: "Location"
-          description: "Quito, Ecuador"
+      #items:
+      #  #- name: "Speakers"
+      #  #  description: "300+"
+      #  #- name: "Attendees"
+      #  #  description: "4,000+"
+      #  - name: "Venue"
+      #    description: "USFQ"
+      #  - name: "Location"
+      #    description: "Quito, Ecuador"
     design:
       spacing:
         padding: [0, 0, 0, 0]

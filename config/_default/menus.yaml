@@ -7,7 +7,7 @@ main:
   - name: Home
     url: /#top
     weight: 10
-  - name: About
+  - name: About SALA
     url: /#about
     weight: 20
   - name: Speakers
@@ -31,14 +31,14 @@ footer:
     name: Get Tickets
     url: /register
     weight: 3
-  - identifier: about
-    name: About
+  - identifier: whoweare
+    name: Who We Are
     weight: 3
-  - parent: about
+  - parent: whoweare
     name: Organization
     url: /organization
-  - parent: about
-    name: Logo
+  - parent: whoweare
+    name: Our Logo
     url: /logo
       #- identifier: legal
       #  name: Legal
