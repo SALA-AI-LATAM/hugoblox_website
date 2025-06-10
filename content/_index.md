@@ -1,6 +1,6 @@
 ---
 title: "Home"
-date: 2023-10-24
+date: 2025-06-10
 type: landing
 
 design:
@@ -11,12 +11,12 @@ sections:
   - block: hero-with-stats
     content:
       title: SALA '26
-      text: "RIIAA is now SALA:**Summit of Ai in LatAm**"
+      text: "RIIAA is now SALA: **Summit of Ai in LatAm**"
       details: "March, 2026."
       primary_action:
         text: Registration available late '25
-        url: lasala.ai/register
-        icon: ticket
+        #url: lasala.ai/register
+        #icon: ticket
       items:
         #- name: "Speakers"
         #  description: "300+"
@@ -31,14 +31,14 @@ sections:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
       # For full-screen, add `min-h-screen` below
-      css_class: "bg-gradient-to-r from-rose-100 to-teal-100"
-  #      background:
-  #        color: ""
-  #        image:
-  #          # Add your image background to `assets/media/`.
-  #          filename: ""
-  #          filters:
-  #            brightness: 1.0
+      #css_class: "bg-gradient-to-r from-rose-100 to-teal-100"
+      background:
+        color: ""
+        image:
+          # Add your image background to `assets/media/`.
+          filename: panecillo.jpg
+          filters:
+            brightness: 1.0
   # - block: countdown
   #   content:
   #     title: "Hurry, Limited Availability"
@@ -55,28 +55,25 @@ sections:
     id: about
     content:
       items:
-        - title: THE YEAR’S CAN’T-MISS EVENT FOR AI COLLABORATION
-          text: AI Summit is coming home to San Francisco. Join us at AI Summit 2024 to explore all the cutting-edge innovation the data cloud has to offer.
-          # Upload image to `assets/media/` and reference the filename here
-          image: city-daniel-abadia.jpg
-        - title: DISCOVER
-          text: Discover the latest in AI, GenAI, application development and much more.
-          # Upload image to `assets/media/` and reference the filename here
-          image: conference-headway-F2KRf_QfCqw.jpg
-        - title: HEAR FROM LEADERS REDEFINING THE AI LANDSCAPE
-          text: Hear valuable insights from data and AI experts and business leaders, while discovering the limitless possibilities of data, AI and application collaboration for your organization.
-          # Upload image to `assets/media/` and reference the filename here
-          image: round-table-evangeline-shaw-xRlI-L-kvrw.jpg
-          button:
-            text: Get Tickets
-            url: https://www.eventbrite.com/
+        - title: CATALYSING AI IN LATIN AMERICA
+          text: SALA brings together the Latin American artificial intelligence (AI) ecosystem. Emphasizing the interaction between actors based in Latin America and abroad, as well as the academic, government, and industrial communities, in order to catalyze the development, adaptation and use of AI in the region.
+          image: riiaa2024.jpg
+        - title: TRANSFORM
+          text: Looking to the future and recognizing an increasingly transformative role for AI, SALA is organized by a group of academics and professionals from Latin American countries, seeking to bring together existing communities and groups in the field. This meeting aims to be an important complement to other conferences, emphasizing the interaction between groups based both in Latin America and abroad, as well as between the communities dedicated to research and practice.
+          image: riiaa2024Panel.jpg
+        - title: LEARN
+          text: Learn from world-experts in the field of AI about a diversity of topics. SALA combines lectures with hands-on practical sessions to maximize information sharing.
+          image: thamar2024.jpg
+          #button:
+          #  text: Get Tickets
+          #  url: https://www.eventbrite.com/
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
   - block: people
     id: speakers
     content:
-      title: Speakers
+      title: Past Speakers
       text: ""
       user_groups: ["Speakers"]
     design:
@@ -87,32 +84,32 @@ sections:
     id: agenda
     content:
       title: Agenda
-      text: |
-        **DAY 1**
-        {style="padding-top: 2rem"}
-        {{< table path="schedule.csv" header="true" >}}
+      text: To be announced in late 2025, stay tuned! #|
+        # **DAY 1**
+        # {style="padding-top: 2rem"}
+        # {{< table path="schedule.csv" header="true" >}}
 
-        **DAY 2**
-        {style="padding-top: 2rem"}
+        # **DAY 2**
+        # {style="padding-top: 2rem"}
 
-        {{< table path="schedule.csv" header="true" >}}
-  - block: testimonials
-    content:
-      title: ""
-      text: ""
-      items:
-        - name: "Alice Smith"
-          role: "Researcher at X"
-          # Upload image to `assets/media/` and reference the filename here
-          image: "testimonial-1.jpg"
-          text: "It has to be the most insightful conference I've ever attended!"
-    design:
-      spacing:
-        # Reduce bottom spacing so the testimonial appears vertically centered between sections
-        padding: ["6rem", 0, 0, 0]
+        # {{< table path="schedule.csv" header="true" >}}
+  #- block: testimonials
+  #  content:
+  #    title: ""
+  #    text: ""
+  #    items:
+  #      - name: "Alice Smith"
+  #        role: "Researcher at X"
+  #        # Upload image to `assets/media/` and reference the filename here
+  #        image: "testimonial-1.jpg"
+  #        text: "It has to be the most insightful conference I've ever attended!"
+  #  design:
+  #    spacing:
+  #      # Reduce bottom spacing so the testimonial appears vertically centered between sections
+  #      padding: ["6rem", 0, 0, 0]
   - block: logos
     content:
-      title: "Sponsors Making This Possible"
+      title: "Past Sponsors"
       text: "Thanks to the following sponsors for making this incredible event possible!"
       # Image path relative to assets/media/ folder
       logo_folder: "sponsors/"
@@ -121,19 +118,19 @@ sections:
         # Card background color (CSS class)
         css_class: "bg-primary-700"
         css_style: ""
-  - block: newsletter
-    content:
-      title: "Stay up to date"
-      text: "Be the first to receive conference updates such as added speakers, deadlines, and ticket deals."
-      text_cta: "Sign up to our newsletter 🔥"
-      button:
-        text: "Subscribe"
-      convertkit:
-        form_id: ""
-        msg_subscribed: "Success! Please check your email to confirm your subscription."
-    design:
-      card:
-        # Card background color (CSS class)
-        css_class: "bg-primary-700"
-        css_style: ""
+  #- block: newsletter
+  #  content:
+  #    title: "Stay up to date"
+  #    text: "Be the first to receive conference updates such as added speakers, deadlines, and ticket deals."
+  #    text_cta: "Sign up to our newsletter 🔥"
+  #    button:
+  #      text: "Subscribe"
+  #    convertkit:
+  #      form_id: ""
+  #      msg_subscribed: "Success! Please check your email to confirm your subscription."
+  #  design:
+  #    card:
+  #      # Card background color (CSS class)
+  #      css_class: "bg-primary-700"
+  #      css_style: ""
 ---

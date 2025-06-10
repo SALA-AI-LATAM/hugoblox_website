@@ -41,7 +41,7 @@ header:
     button:
       enable: true
       text: "Register Soon"
-      url: "lasala.ai/register"
+      url: "/register"
     show_search: false
     show_theme_chooser: false
 

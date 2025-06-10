@@ -29,16 +29,25 @@ footer:
     weight: 2
   - parent: tickets
     name: Get Tickets
-    url: https://www.eventbrite.com/
+    url: /register
     weight: 3
-  - identifier: legal
-    name: Legal
+  - identifier: about
+    name: About
     weight: 3
-  - parent: legal
-    name: Privacy
-    url: /privacy
-    weight: 1
-  - parent: legal
-    name: Terms
-    url: /terms
-    weight: 2
+  - parent: about
+    name: Organization
+    url: /organization
+  - parent: about
+    name: Logo
+    url: /logo
+      #- identifier: legal
+      #  name: Legal
+      #  weight: 3
+      #- parent: legal
+      #  name: Privacy
+      #  url: /privacy
+      #  weight: 1
+      #- parent: legal
+      #  name: Terms
+      #  url: /terms
+      #  weight: 2
