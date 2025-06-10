@@ -57,10 +57,10 @@ sections:
       items:
         - title: CATALYSING AI IN LATIN AMERICA
           text: SALA brings together the Latin American artificial intelligence (AI) ecosystem. Emphasizing the interaction between actors based in Latin America and abroad, as well as the academic, government, and industrial communities, in order to catalyze the development, adaptation and use of AI in the region.
-          image: riiaa2024.jpg
+          image: riiaa2024Dragon.jpg
         - title: TRANSFORM
           text: Looking to the future and recognizing an increasingly transformative role for AI, SALA is organized by a group of academics and professionals from Latin American countries, seeking to bring together existing communities and groups in the field. This meeting aims to be an important complement to other conferences, emphasizing the interaction between groups based both in Latin America and abroad, as well as between the communities dedicated to research and practice.
-          image: riiaa2024Panel.jpg
+          image: riiaa2024Panel2.jpg
         - title: LEARN
           text: Learn from world-experts in the field of AI about a diversity of topics. SALA combines lectures with hands-on practical sessions to maximize information sharing.
           image: thamar2024.jpg
