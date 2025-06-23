@@ -7,14 +7,12 @@ main:
   - name: Home
     url: /#top
     weight: 10
-  - name: About SALA
-    url: /#about
+  - name: SALA 2026
+    url: /sala2026
+  - name: About Us
+    url: /organization
     weight: 20
-  - name: Speakers
-    url: /#speakers
     weight: 30
-  - name: Agenda
-    url: /#agenda
 
 footer:
   - identifier: home
@@ -31,13 +29,13 @@ footer:
     name: Get Tickets
     url: /register
     weight: 3
-  - identifier: whoweare
-    name: Who We Are
+  - identifier: aboutus
+    name: About us
     weight: 3
-  - parent: whoweare
+  - parent: aboutus
     name: Organization
     url: /organization
-  - parent: whoweare
+  - parent: aboutus
     name: Our Brand
     url: /brand
       #- identifier: legal

@@ -29,7 +29,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Speakers
+  - PastSpeakers
 ---
 
 Samy Bengio is a Canadian computer scientist, Senior Director of AI and Machine Learning Research at Apple and a former long-time scientist at Google known for leading a large group of researchers working in machine learning including adversarial settings.

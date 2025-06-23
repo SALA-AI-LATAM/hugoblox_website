@@ -66,7 +66,7 @@ sections:
           image: riiaa2024Panel2.jpg
         - title: LEARN
           text: Learn from world-experts in the field of AI about a diversity of topics. SALA combines lectures with hands-on practical sessions to maximize information sharing.
-          image: thamar2024.jpg
+          image: jose2024.jpg
           #button:
           #  text: Get Tickets
           #  url: https://www.eventbrite.com/
@@ -78,7 +78,7 @@ sections:
     content:
       title: Past Speakers
       text: ""
-      user_groups: ["Speakers"]
+      user_groups: ["PastSpeakers"]
     design:
       show_role: true
       show_social: true
