@@ -110,11 +110,16 @@ sections:
   #    spacing:
   #      # Reduce bottom spacing so the testimonial appears vertically centered between sections
   #      padding: ["6rem", 0, 0, 0]
-  - block: markdown
+  - block: cta-image-paragraph
     id: pastSponsors
     content:
-      title: Past Sponsors
-      text: Thanks to our past sponsors for making this incredible event possible!<br><img src="media/pastSponsors_hu4959326632855680465.webp" width=1020>
+      items:
+      - title: Past Sponsors
+        text: Thanks to our past sponsors for making this incredible event possible!
+        image: pastSponsors.png
+    design:
+      # Section background color (CSS class)
+      css_class: "bg-black"
   #- block: logos
   #  content:
   #    title: "Past Sponsors"

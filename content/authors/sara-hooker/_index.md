@@ -24,6 +24,8 @@ profiles:
     url: https://x.com/sarahookr
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/sararosehooker/
+  - icon: brands/website
+    url: https://www.sarahooker.me/
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
