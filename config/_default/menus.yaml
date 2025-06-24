@@ -36,8 +36,11 @@ footer:
     name: Organization
     url: /organization
   - parent: aboutus
-    name: Our Brand
+    name: Our Story
     url: /brand
+  - parent: aboutus
+    name: Contact Us
+    url: /contact
       #- identifier: legal
       #  name: Legal
       #  weight: 3

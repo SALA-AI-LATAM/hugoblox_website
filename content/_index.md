@@ -14,8 +14,8 @@ sections:
   - block: hero-with-stats
     content:
       title: SALA '26
-      text: "**Summit of Ai in LatAm**"
-      details: "March, 2026; USFQ - Quito, Ecuador."
+      text: "**Summit of AI in LatAm**"
+      details: "March 9-12, 2026; USFQ - Quito, Ecuador."
       primary_action:
         text: Registration available late '25
         #url: lasala.ai/register
@@ -110,17 +110,22 @@ sections:
   #    spacing:
   #      # Reduce bottom spacing so the testimonial appears vertically centered between sections
   #      padding: ["6rem", 0, 0, 0]
-  - block: logos
+  - block: markdown
+    id: pastSponsors
     content:
-      title: "Past Sponsors"
-      text: "Thanks to the following sponsors for making this incredible event possible!"
-      # Image path relative to assets/media/ folder
-      logo_folder: "sponsors/"
-    design:
-      card:
-        # Card background color (CSS class)
-        css_class: "bg-primary-700"
-        css_style: ""
+      title: Past Sponsors
+      text: Thanks to our past sponsors for making this incredible event possible!<br><img src="media/pastSponsors_hu4959326632855680465.webp" width=1020>
+  #- block: logos
+  #  content:
+  #    title: "Past Sponsors"
+  #    text: "Thanks to our past sponsors for making this incredible event possible!"
+  #    # Image path relative to assets/media/ folder
+  #    logo_folder: "sponsors/"
+  #  design:
+  #    card:
+  #      # Card background color (CSS class)
+  #      css_class: "bg-primary-700"
+  #      css_style: ""
   #- block: newsletter
   #  content:
   #    title: "Stay up to date"
