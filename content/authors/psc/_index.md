@@ -26,7 +26,7 @@ profiles:
     url: https://x.com/pcastr
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/pablo-samuel-castro-2113641b/
-  - icon: brands/website
+  - icon: hero/globe-alt
     url: https://psc-g.github.io/
 
 # Organizational groups that you belong to (for People widget)

@@ -7,7 +7,7 @@ role: Website Chair
 
 # Organizations/Affiliations
 organizations:
-  - name: Sailplane AI
+  - name: Research Scientist, Sailplane AI
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
@@ -15,16 +15,16 @@ bio: Vladimir's bio!
 
 interests:
   - Artificial Intelligence
-  - Web Development
+  - Natural Language Processing
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/vgaraujov/
   - icon: brands/x
     url: https://x.com/vgaraujov
-  - icon: brands/website
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/vgaraujov/
+  - icon: hero/globe-alt
     url: https://vgaraujov.github.io/
 
 # Organizational groups that you belong to (for People widget)

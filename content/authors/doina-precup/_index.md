@@ -20,7 +20,7 @@ interests:
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: brands/website
+  - icon: hero/globe-alt
     url: https://rl.cs.mcgill.ca/people/doina-precup/
 
 # Organizational groups that you belong to (for People widget)

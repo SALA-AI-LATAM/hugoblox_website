@@ -24,7 +24,7 @@ profiles:
     url: https://x.com/hugo_larochelle
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/hugo-larochelle-b11a7126/
-  - icon: brands/website
+  - icon: hero/globe-alt
     url: https://mila.quebec/en/directory/hugo-larochelle
 
 # Organizational groups that you belong to (for People widget)

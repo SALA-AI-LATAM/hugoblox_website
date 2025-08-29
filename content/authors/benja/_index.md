@@ -23,7 +23,7 @@ interests:
 profiles:
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/benjamin-sanchez-lengeling-6879a68a/
-  - icon: brands/website
+  - icon: hero/globe-alt
     url: https://www.benmsanchez.com/
 
 # Organizational groups that you belong to (for People widget)

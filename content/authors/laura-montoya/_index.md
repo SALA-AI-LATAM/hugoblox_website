@@ -26,7 +26,7 @@ profiles:
     url: https://x.com/QuickResolute
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/lnmontoya/
-  - icon: brands/website
+  - icon: hero/globe-alt
     url: https://www.accel-impact.com/lnm-home
 
 # Organizational groups that you belong to (for People widget)

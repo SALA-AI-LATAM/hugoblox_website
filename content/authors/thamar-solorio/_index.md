@@ -24,7 +24,7 @@ profiles:
     url: https://x.com/thamar_solorio
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/thamar-solorio/
-  - icon: brands/website
+  - icon: hero/globe-alt
     url: https://mbzuai.ac.ae/study/faculty/thamar-solorio/
 
 # Organizational groups that you belong to (for People widget)
