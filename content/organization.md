@@ -13,7 +13,7 @@ design:
 sections:
   - block: markdown
     content:
-      text: <img src="../media/logoHorizontal.png" width="1080">
+      text: '![SALA Logo](logoHorizontal.png)'
   - block: cta-image-paragraph
     content:
       items:
