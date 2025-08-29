@@ -13,7 +13,7 @@ design:
 sections:
   - block: markdown
     content:
-      text: <img src="../media/logoHorizontal_hu12318733846322767716.webp" width="1080">
+      text: <img src="../media/logoHorizontal.png" width="1080">
   - block: cta-image-paragraph
     content:
       items:
