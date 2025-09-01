@@ -4,7 +4,7 @@ first_name: Johan
 last_name: Obando-Ceron
 
 # Role/position
-role: Hackathon & Practicals Chair
+role: Travel Grants Chair
 
 # Weight for role-based sorting (lower numbers appear first)
 weight: 4

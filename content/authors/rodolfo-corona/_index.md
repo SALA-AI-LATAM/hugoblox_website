@@ -4,7 +4,7 @@ first_name: Rodolfo
 last_name: Corona Rodriguez
 
 # Role/position
-role: Travel Grants Chair
+role: Hackathon & Practicals Chair
 
 # Weight for role-based sorting (lower numbers appear first)
 weight: 4
