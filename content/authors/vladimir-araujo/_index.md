@@ -1,9 +1,13 @@
 ---
 # Display name
-title: Vladimir Araujo
+first_name: Vladimir
+last_name: Araujo
 
 # Role/position
 role: Website Chair
+
+# Weight for role-based sorting (lower numbers appear first)
+weight: 4
 
 # Organizations/Affiliations
 organizations:

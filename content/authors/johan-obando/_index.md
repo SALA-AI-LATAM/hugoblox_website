@@ -1,17 +1,21 @@
 ---
 # Display name
-title: Rodolfo Corona Rodriguez
+first_name: Johan
+last_name: Obando-Ceron
 
 # Role/position
 role: Hackathon & Practicals Chair
 
+# Weight for role-based sorting (lower numbers appear first)
+weight: 4
+
 # Organizations/Affiliations
 organizations:
-  - name: PhD student, UC Berkeley
+  - name: PhD student, Mila and Université de Montréal
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: Rodolfo's bio!
+bio: Johan's bio!
 
 interests:
   - Artificial Intelligence
@@ -19,13 +23,17 @@ interests:
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
+  - icon: brands/x
+    url: https://x.com/johanobandoc
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/rodolfo-corona-rodriguez-819492161/
+    url: https://www.linkedin.com/in/johan-obando/?originalSubdomain=ca
+  - icon: hero/globe-alt
+    url: https://johanobandoc.github.io/index.html
 
 # Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
+#   Set this to `[] or comment out if you are not using People widget.
 user_groups:
   - Organizers
 ---
 
-Rodolfo's bio!
+Johan's bio!

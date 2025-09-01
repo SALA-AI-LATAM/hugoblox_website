@@ -1,9 +1,13 @@
 ---
 # Display name
-title: Hugo Larochelle
+first_name: Hugo
+last_name: Larochelle
 
 # Role/position
 role: Advisor
+
+# Weight for role-based sorting (lower numbers appear first)
+weight: 2
 
 # Organizations/Affiliations
 organizations:

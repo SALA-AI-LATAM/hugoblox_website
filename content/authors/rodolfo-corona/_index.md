@@ -1,17 +1,21 @@
 ---
 # Display name
-title: Johan Obando-Ceron
+first_name: Rodolfo
+last_name: Corona Rodriguez
 
 # Role/position
 role: Travel Grants Chair
 
+# Weight for role-based sorting (lower numbers appear first)
+weight: 4
+
 # Organizations/Affiliations
 organizations:
-  - name: PhD student, Mila and Université de Montréal
+  - name: PhD student, UC Berkeley
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: Johan's bio!
+bio: Rodolfo's bio!
 
 interests:
   - Artificial Intelligence
@@ -19,12 +23,8 @@ interests:
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: brands/x
-    url: https://x.com/johanobandoc
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/johan-obando/?originalSubdomain=ca
-  - icon: hero/globe-alt
-    url: https://johanobandoc.github.io/index.html
+    url: https://www.linkedin.com/in/rodolfo-corona-rodriguez-819492161/
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
@@ -32,4 +32,4 @@ user_groups:
   - Organizers
 ---
 
-Johan's bio!
+Rodolfo's bio!

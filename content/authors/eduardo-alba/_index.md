@@ -1,9 +1,13 @@
 ---
 # Display name
-title: Eduardo Alba
+first_name: Eduardo
+last_name: Alba
 
 # Role/position
 role: Local Chair
+
+# Weight for role-based sorting (lower numbers appear first)
+weight: 3
 
 # Organizations/Affiliations
 organizations:

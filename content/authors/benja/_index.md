@@ -1,9 +1,13 @@
 ---
 # Display name
-title: Benjamin Sanchez-Lengeling
+first_name: Benjamin
+last_name: Sanchez-Lengeling
 
 # Role/position
-role: DIrector SALA, Academic Engagements Chair
+role: Director SALA, Academic Engagements Chair
+
+# Weight for role-based sorting (lower numbers appear first)
+weight: 1
 
 # Organizations/Affiliations
 organizations:

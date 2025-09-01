@@ -1,9 +1,13 @@
 ---
 # Display name
-title: Anita Sancho
+first_name: Anita
+last_name: Sancho
 
 # Role/position
 role: Local Chair
+
+# Weight for role-based sorting (lower numbers appear first)
+weight: 3
 
 # Organizations/Affiliations
 organizations:

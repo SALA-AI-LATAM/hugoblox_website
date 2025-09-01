@@ -1,9 +1,13 @@
 ---
 # Display name
-title: Isabelle Simpson
+first_name: Isabelle
+last_name: Simpson
 
 # Role/position
 role: Director SALA, Communications Chair
+
+# Weight for role-based sorting (lower numbers appear first)
+weight: 1
 
 # Organizations/Affiliations
 organizations:

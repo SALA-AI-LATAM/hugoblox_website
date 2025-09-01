@@ -1,9 +1,13 @@
 ---
 # Display name
-title: Pablo Samuel Castro
+first_name: Pablo Samuel
+last_name: Castro
 
 # Role/position
 role: Director SALA, General Chair
+
+# Weight for role-based sorting (lower numbers appear first)
+weight: 1
 
 # Organizations/Affiliations
 organizations:

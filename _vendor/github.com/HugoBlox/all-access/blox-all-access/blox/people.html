@@ -31,12 +31,9 @@
         {{ range $block.content.user_groups }}
         {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
 
-        {{/* Sort */}}
-        {{ $sort_by := $block.content.sort_by | default "Params.last_name" }}
-        {{ $sort_by = partial "functions/get_sort_by_parameter" $sort_by }}
-        {{ $sort_ascending := $block.content.sort_ascending | default true }}
-        {{ $sort_order := cond $sort_ascending "asc" "desc" }}
-        {{ $query = sort $query $sort_by $sort_order }}
+        {{/* Dual-level Sort: Primary by weight, Secondary by last_name */}}
+        {{ $query = sort $query "Params.last_name" "asc" }}
+        {{ $query = sort $query "Params.weight" "asc" }}
 
         {{if $query | and (gt (len $block.content.user_groups) 1) }}
 <!--        <div class="col-md-12">-->
@@ -75,7 +72,7 @@
           </div>
 
           <h3 class="mt-8 font-display text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">
-            <a href="{{$person.Page.RelPermalink}}">{{.Title}}</a>
+            <a href="{{$person.Page.RelPermalink}}">{{.Params.first_name}} {{.Params.last_name}}</a>
           </h3>
 
           {{ if ((and $show_role .Params.role) | and .Params.organizations) }}

@@ -1,9 +1,13 @@
 ---
 # Display name
-title: Doina Precup
+first_name: Doina
+last_name: Precup
 
 # Role/position
 role: Advisor
+
+# Weight for role-based sorting (lower numbers appear first)
+weight: 2
 
 # Organizations/Affiliations
 organizations:
