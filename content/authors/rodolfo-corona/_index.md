@@ -1,30 +1,30 @@
 ---
 # Display name
-title: Benjamin Sanchez-Lengeling
+title: Johan Obando-Ceron
 
 # Role/position
-role: DIrector SALA, Academic Engagements Chair
+role: Travel Grants Chair
 
 # Organizations/Affiliations
 organizations:
-  - name: Assistant Professor, University of Toronto
+  - name: PhD student, Mila and Université de Montréal
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: Benja bio!
+bio: Johan's bio!
 
 interests:
   - Artificial Intelligence
-  - Machine Learning
-  - Chemistry
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
+  - icon: brands/x
+    url: https://x.com/johanobandoc
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/benjamin-sanchez-lengeling-6879a68a/
+    url: https://www.linkedin.com/in/johan-obando/?originalSubdomain=ca
   - icon: hero/globe-alt
-    url: https://www.benmsanchez.com/
+    url: https://johanobandoc.github.io/index.html
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
@@ -32,4 +32,4 @@ user_groups:
   - Organizers
 ---
 
-Benja bio!
+Johan's bio!

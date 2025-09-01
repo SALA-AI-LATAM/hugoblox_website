@@ -1,30 +1,26 @@
 ---
 # Display name
-title: Benjamin Sanchez-Lengeling
+title: Rodolfo Corona Rodriguez
 
 # Role/position
-role: DIrector SALA, Academic Engagements Chair
+role: Hackathon & Practicals Chair
 
 # Organizations/Affiliations
 organizations:
-  - name: Assistant Professor, University of Toronto
+  - name: PhD student, UC Berkeley
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: Benja bio!
+bio: Rodolfo's bio!
 
 interests:
   - Artificial Intelligence
-  - Machine Learning
-  - Chemistry
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/benjamin-sanchez-lengeling-6879a68a/
-  - icon: hero/globe-alt
-    url: https://www.benmsanchez.com/
+    url: https://www.linkedin.com/in/rodolfo-corona-rodriguez-819492161/
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
@@ -32,4 +28,4 @@ user_groups:
   - Organizers
 ---
 
-Benja bio!
+Rodolfo's bio!

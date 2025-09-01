@@ -3,7 +3,7 @@
 title: Pablo Samuel Castro
 
 # Role/position
-role: Director SALA
+role: Director SALA, General Chair
 
 # Organizations/Affiliations
 organizations:

@@ -3,7 +3,7 @@
 title: Isabelle Simpson
 
 # Role/position
-role: Director SALA
+role: Director SALA, Communications Chair
 
 # Organizations/Affiliations
 organizations:
