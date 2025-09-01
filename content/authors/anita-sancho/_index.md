@@ -12,7 +12,7 @@ weight: 3
 # Organizations/Affiliations
 organizations:
   - name: Founder, Loopa
-    url: ''
+    url: https://www.linkedin.com/in/anitasanchop/?locale=es_ES
 
 # Short bio (displayed in user profile at end of posts)
 bio: Anita's bio!

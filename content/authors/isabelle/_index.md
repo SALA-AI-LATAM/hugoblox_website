@@ -12,7 +12,7 @@ weight: 1
 # Organizations/Affiliations
 organizations:
   - name: Administrative Business Partner, DeepMind
-    url: ''
+    url: https://www.linkedin.com/in/iloveachallenge/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Isabelle's bio!

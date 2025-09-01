@@ -12,7 +12,7 @@ weight: 2
 # Organizations/Affiliations
 organizations:
   - name: Adjunct Professor, Université de Montréal, Mila
-    url: ''
+    url: https://mila.quebec/en/directory/hugo-larochelle
 
 # Short bio (displayed in user profile at end of posts)
 bio: Hugo Larochelle is a researcher and adjunct professor at Université de Montréal. His research focuses on the study and development of deep learning algorithms.

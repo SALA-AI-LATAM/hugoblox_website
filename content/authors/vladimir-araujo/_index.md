@@ -12,7 +12,7 @@ weight: 4
 # Organizations/Affiliations
 organizations:
   - name: Research Scientist, Sailplane AI
-    url: ''
+    url: https://vgaraujov.github.io/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Vladimir's bio!

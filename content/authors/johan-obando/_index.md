@@ -12,7 +12,7 @@ weight: 4
 # Organizations/Affiliations
 organizations:
   - name: PhD student, Mila and Université de Montréal
-    url: ''
+    url: https://johanobandoc.github.io/index.html
 
 # Short bio (displayed in user profile at end of posts)
 bio: Johan's bio!

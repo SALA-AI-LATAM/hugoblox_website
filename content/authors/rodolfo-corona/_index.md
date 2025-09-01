@@ -12,7 +12,7 @@ weight: 4
 # Organizations/Affiliations
 organizations:
   - name: PhD student, UC Berkeley
-    url: ''
+    url: https://www.linkedin.com/in/rodolfo-corona-rodriguez-819492161/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Rodolfo's bio!

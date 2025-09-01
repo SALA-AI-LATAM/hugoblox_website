@@ -12,7 +12,7 @@ weight: 2
 # Organizations/Affiliations
 organizations:
   - name: Research Scientist, DeepMind
-    url: ''
+    url: https://rl.cs.mcgill.ca/people/doina-precup/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Doina Precup is an associate professor at McGill University and head of the Montreal office of Deepmind. She conducts fundamental research on reinforcement learning, working in particular on AI applications in areas that have a social impact, such as health care. She’s interested in machine decision-making in situations where uncertainty is high. She is a senior fellow of the Canadian Institute for Advanced Research, fellow of the Association for the Advancement of Artificial Intelligence.

@@ -43,10 +43,19 @@
 
         {{ range $person := $query }}
         {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
-        {{/* Get link to user's profile page. */}}
+        {{/* Get external URL from organizations or fallback to internal bio page. */}}
         {{ $link := "" }}
-        {{ with site.GetPage (printf "/authors/%s" (path.Base .File.Dir)) }}
-        {{ $link = .RelPermalink }}
+        {{ if .Params.organizations }}
+          {{ range first 1 .Params.organizations }}
+            {{ if .url }}
+              {{ $link = .url }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if not $link }}
+          {{ with site.GetPage (printf "/authors/%s" (path.Base .File.Dir)) }}
+          {{ $link = .RelPermalink }}
+          {{ end }}
         {{ end }}
         <div>
           <div class="group relative h-[17.5rem] transform overflow-hidden rounded-3xl">
@@ -59,7 +68,7 @@
               {{ end }}
               {{ if $image }}
                 {{/* $avatar_shape := site.Params.features.avatar.shape | default "circle" */}}
-                <a href="{{$person.Page.RelPermalink}}">
+                <a href="{{ $link }}" {{ if not (hasPrefix $link "/") }}target="_blank" rel="noopener"{{ end }}>
                   <img src="{{ $image.RelPermalink }}" alt="Avatar" width="{{$image.Width}}" height="{{$image.Height}}" loading="lazy"
                       class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
                       data-nimg="1"
@@ -72,7 +81,7 @@
           </div>
 
           <h3 class="mt-8 font-display text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">
-            <a href="{{$person.Page.RelPermalink}}">{{.Params.first_name}} {{.Params.last_name}}</a>
+            <a href="{{ $link }}" {{ if not (hasPrefix $link "/") }}target="_blank" rel="noopener"{{ end }}>{{.Params.first_name}} {{.Params.last_name}}</a>
           </h3>
 
           {{ if ((and $show_role .Params.role) | and .Params.organizations) }}

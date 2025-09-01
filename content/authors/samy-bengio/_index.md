@@ -9,7 +9,7 @@ role: Senior Director, AI and Machine Learning Research
 # Organizations/Affiliations
 organizations:
   - name: Apple
-    url: ''
+    url: https://www.linkedin.com/in/bengio/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Samy Bengio is a Canadian computer scientist, Senior Director of AI and Machine Learning Research at Apple and a former long-time scientist at Google known for leading a large group of researchers working in machine learning including adversarial settings.

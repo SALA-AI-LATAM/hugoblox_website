@@ -12,7 +12,7 @@ weight: 1
 # Organizations/Affiliations
 organizations:
   - name: Assistant Professor, University of Toronto
-    url: ''
+    url: https://www.benmsanchez.com/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Benja bio!
