@@ -1,6 +1,7 @@
 ---
 # Display name
-title: Thamar Solorio
+first_name: Thamar
+last_name: Solorio
 
 # Role/position
 role: Professor of NLP

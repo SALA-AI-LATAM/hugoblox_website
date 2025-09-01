@@ -1,6 +1,7 @@
 ---
 # Display name
-title: Kevin Murphy
+first_name: Kevin
+last_name: Murphy
 
 # Role/position/tagline
 role: Research Scientist

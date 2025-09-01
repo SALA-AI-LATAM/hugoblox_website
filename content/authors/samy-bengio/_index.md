@@ -1,6 +1,7 @@
 ---
 # Display name
-title: Samy Bengio
+first_name: Samy
+last_name: Bengio
 
 # Role/position
 role: Senior Director, AI and Machine Learning Research

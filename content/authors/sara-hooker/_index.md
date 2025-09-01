@@ -1,6 +1,7 @@
 ---
 # Display name
-title: Sara Hooker
+first_name: Sara
+last_name: Hooker
 
 # Role/position
 role: Director

@@ -1,6 +1,7 @@
 ---
 # Display name
-title: Laura Montoya
+first_name: Laura
+last_name: Montoya
 
 # Role/position
 role: Founder
