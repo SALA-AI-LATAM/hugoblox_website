@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: SALA.ai - Your living room conference for AI in Latin America. # Website name
+title: SALA.ai - Summit of AI in LatAm # Website name
 baseURL: 'https://lasala.ai/' # Website URL
 
 ############################
