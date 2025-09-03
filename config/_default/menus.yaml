@@ -23,11 +23,11 @@ footer:
     url: /
     weight: 1
   - identifier: tickets
-    name: Tickets
+    name: Events
     weight: 2
   - parent: tickets
-    name: Get Tickets
-    url: /register
+    name: Register
+    url: https://docs.google.com/forms/d/e/1FAIpQLScQp8GfLSdhmhW6mc4SggVgOa_SxYPmPGlaVLqS93Lur17ZZA/viewform
     weight: 3
   - identifier: aboutus
     name: About us

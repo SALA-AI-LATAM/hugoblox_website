@@ -17,9 +17,9 @@ sections:
       text: "**Summit of AI in LatAm**"
       details: "March 9-12, 2026; USFQ - Quito, Ecuador"
       primary_action:
-        text: Registration available late '25
-        #url: lasala.ai/register
-        #icon: ticket
+        text: Register Now
+        url: https://docs.google.com/forms/d/e/1FAIpQLScQp8GfLSdhmhW6mc4SggVgOa_SxYPmPGlaVLqS93Lur17ZZA/viewform
+        # icon: ticket
       #items:
       #  #- name: "Speakers"
       #  #  description: "300+"
