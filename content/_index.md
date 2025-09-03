@@ -93,11 +93,11 @@ sections:
       show_role: true
       show_social: true
       show_interests: false
-  - block: markdown
-    id: agenda
-    content:
-      title: Agenda
-      text: To be announced in late 2025, stay tuned! #|
+  # - block: markdown
+  #   id: agenda
+  #   content:
+  #     title: Agenda
+  #     text: To be announced in late 2025, stay tuned! #|
         # **DAY 1**
         # {style="padding-top: 2rem"}
         # {{< table path="schedule.csv" header="true" >}}
