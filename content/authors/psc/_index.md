@@ -11,7 +11,7 @@ weight: 1
 
 # Organizations/Affiliations
 organizations:
-  - name: Research Scientist, DeepMind
+  - name: Research Scientist, Google DeepMind
     url: https://psc-g.github.io/
 
 # Short bio (displayed in user profile at end of posts)

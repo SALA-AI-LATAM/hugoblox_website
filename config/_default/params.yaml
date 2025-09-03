@@ -59,12 +59,12 @@ footer:
   
 # Site-wide social media profiles (similar to author profiles)
 profiles:
-  - icon: brands/bluesky
-    url: https://bsky.app/
-    label: BlueSky
   - icon: brands/x
     url: https://x.com/la_sala_ai
     label: X (Twitter)
+  - icon: brands/bluesky
+    url: https://bsky.app/profile/lasalaai.bsky.social
+    label: BlueSky
   - icon: brands/linkedin
     url: https://www.linkedin.com/company/sala-ai/about/
     label: LinkedIn

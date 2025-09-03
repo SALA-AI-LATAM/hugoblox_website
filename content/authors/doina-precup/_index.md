@@ -11,7 +11,7 @@ weight: 2
 
 # Organizations/Affiliations
 organizations:
-  - name: Research Scientist, DeepMind
+  - name: Research Scientist, Google DeepMind
     url: https://rl.cs.mcgill.ca/people/doina-precup/
 
 # Short bio (displayed in user profile at end of posts)
