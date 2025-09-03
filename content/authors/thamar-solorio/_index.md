@@ -32,5 +32,6 @@ profiles:
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - PastSpeakers
+  - ConfirmedSpeakers
 ---
 Thamar Solorio is a professor of Computer Science at MBZUAI and at the University of Houston (UH). She is also the Director and founder of the RiTUAL Lab. She holds graduate degrees in computer science from the Instituto Nacional de Astrofísica, Óptica y Electrónica, in Puebla, Mexico. Solorio is a recipient of an NSF CAREER award, and of the 2014 Emerging Leader ABIE Award in Honor of Denice Denton. She is currently serving a second term as an elected board member of the North American Chapter of the Association of Computational Linguistics and was PC co-chair for NAACL 2019. She is co-Editor-in-Chief for the ACL Rolling Review (ARR) system and member of the ARR advisory board.

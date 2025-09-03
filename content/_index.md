@@ -15,7 +15,7 @@ sections:
     content:
       title: SALA '26
       text: "**Summit of AI in LatAm**"
-      details: "March 9-12, 2026; USFQ - Quito, Ecuador."
+      details: "March 9-12, 2026; USFQ - Quito, Ecuador"
       primary_action:
         text: Registration available late '25
         #url: lasala.ai/register
@@ -73,6 +73,16 @@ sections:
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
+  - block: people
+    id: confirmed-speakers
+    content:
+      title: Confirmed Speakers
+      text: ""
+      user_groups: ["ConfirmedSpeakers"]
+    design:
+      show_role: true
+      show_social: true
+      show_interests: false
   - block: people
     id: speakers
     content:
