@@ -83,16 +83,6 @@ sections:
       show_role: true
       show_social: true
       show_interests: false
-  - block: people
-    id: speakers
-    content:
-      title: Past Speakers
-      text: ""
-      user_groups: ["PastSpeakers"]
-    design:
-      show_role: true
-      show_social: true
-      show_interests: false
   # - block: markdown
   #   id: agenda
   #   content:
@@ -124,8 +114,8 @@ sections:
     id: pastSponsors
     content:
       items:
-      - title: Past Sponsors
-        text: Thanks to our past sponsors for making this incredible event possible!
+      - title: Sponsors
+        text: Thanks to our sponsors for making this incredible event possible!
         image: pastSponsors.png
     design:
       # Section background color (CSS class)

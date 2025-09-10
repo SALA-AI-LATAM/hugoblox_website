@@ -4,14 +4,17 @@
 # Docs: https://gohugo.io/content-management/menus/#define-in-site-configuration
 
 main:
-  - name: Home
+  - name: SALA 2026
     url: /#top
     weight: 10
-  - name: SALA 2026
+  - name: Program
     url: /sala2026
+    weight: 20
+  - name: Previous Events
+    url: /previous-events
+    weight: 25
   - name: About Us
     url: /organization
-    weight: 20
     weight: 30
 
 footer:
@@ -29,6 +32,10 @@ footer:
     name: Register
     url: https://docs.google.com/forms/d/e/1FAIpQLScQp8GfLSdhmhW6mc4SggVgOa_SxYPmPGlaVLqS93Lur17ZZA/viewform
     weight: 3
+  - parent: tickets
+    name: Past Events
+    url: /previous-events
+    weight: 4
   - identifier: aboutus
     name: About us
     weight: 3

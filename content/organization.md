@@ -29,10 +29,9 @@ sections:
         - title: Audience
           text: Our attendees and speakers come from over 20 countries around Latin America and the world. They include a mix of undergraduate and graduate students, industry academics & professionals, entrepreneurs, and policy stakeholders.<br>Interested participants must apply to attend, and we conduct a thorough evaluation process to ensure quality-of-fit as well as encourage a diversity of participants.
           image: audience.jpg
-
-        - title: RIIAA
-          text: Formerly called [RIIAA](https://riiaa.org/), the organization has held 7 annual conferences in Ecuador and Mexico,  drawing over a thousand participants from across Latin America and building a vibrant community dedicated to sharing knowledge and collaborating on AI. 
-          image: riiaa.png
+        # - title: RIIAA
+        #   text: Formerly called [RIIAA](https://riiaa.org/), the organization has held 7 annual conferences in Ecuador and Mexico,  drawing over a thousand participants from across Latin America and building a vibrant community dedicated to sharing knowledge and collaborating on AI. 
+        #   image: riiaa_logo.png
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
