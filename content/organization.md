@@ -11,15 +11,18 @@ design:
       filename: iridiscenceDark.jpg
 
 sections:
-  - block: markdown
-    content:
-      text: '![SALA Logo](logoHorizontal.png)'
+  # - block: markdown
+  #   content:
+  #     text: '![SALA Logo](logoHorizontal.png)'
   - block: cta-image-paragraph
     content:
       items:
         - title: About the event
           text: SALA brings together the Latin American artificial intelligence ecosystem.<br>We accomplish this primarily through our biennial conference, connecting local AI talent and stakeholders—from academia, industry, and government—with global experts, resources, and opportunities.
-          image: riiaa2024Dragon.jpg
+          image: logoHorizontal.png
+          button:
+            text: The Story of Our Logo
+            url: ../brand/
         - title: Guest Lectures
           text: This year’s format is designed to create a unique, fully-immersive experience. In the morning, we kick off with guests lectures from renowned AI researchers from leading universities and tech companies. 
           image: thamar2024.jpg
@@ -38,7 +41,7 @@ sections:
   - block: people
     id: organizers
     content:
-      title: Who we are
+      title: Our Team
       text: ""
       user_groups: ["Organizers"]
     design:

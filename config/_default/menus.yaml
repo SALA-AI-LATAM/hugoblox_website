@@ -43,7 +43,7 @@ footer:
     name: Organization
     url: /organization
   - parent: aboutus
-    name: Our Story
+    name: Our Logo Story
     url: /brand
   - parent: aboutus
     name: Contact Us
