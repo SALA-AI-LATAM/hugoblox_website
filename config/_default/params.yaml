@@ -75,6 +75,7 @@ locale:
   time_format: '3:04 PM'
 
 # Extensions
+  plugins_css: ["custom"]
 extensions:
   convertkit:
     # To use the ConvertKit Newsletter blox, provide your public API Key from your ConvertKit account settings page
