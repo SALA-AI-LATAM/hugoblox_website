@@ -1,0 +1,35 @@
+---
+# Display name
+first_name: Walter
+last_name: Mayor-Toro
+
+# Role/position
+role: Social Media Chair
+
+# Weight for role-based sorting (lower numbers appear first)
+weight: 4
+
+# Organizations/Affiliations
+organizations:
+  - name: Independent Researcher
+    url: https://www.linkedin.com/in/walter-mayor/
+
+# Short bio (displayed in user profile at end of posts)
+bio: Walter's bio!
+
+interests:
+  - Artificial Intelligence
+
+# Social Networking
+# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+profiles:
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/walter-mayor/
+
+# Organizational groups that you belong to (for People widget)
+#   Set this to `[]` or comment out if you are not using People widget.
+user_groups:
+  - Organizers
+---
+
+Walter's bio!
