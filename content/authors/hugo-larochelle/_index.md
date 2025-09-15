@@ -11,7 +11,7 @@ weight: 2
 
 # Organizations/Affiliations
 organizations:
-  - name: Adjunct Professor, Université de Montréal, Mila
+  - name: Scientific Director, Mila
     url: https://mila.quebec/en/directory/hugo-larochelle
 
 # Short bio (displayed in user profile at end of posts)
