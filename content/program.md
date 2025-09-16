@@ -14,8 +14,12 @@ sections:
   - block: markdown
     id: agenda
     content:
-      title: Agenda
+      title: SALA '26 Program
       text: |
+        <p style="text-align: center; font-size: 1.1rem; color: #e5e7eb; margin-bottom: 2rem; font-weight: 500;">
+          The time zone in Quito, Ecuador is UTC-5.
+        </p>
+        
         <style>
         .sala-agenda {
           margin: 2rem 0;
@@ -171,6 +175,66 @@ sections:
             display: block;
           }
           
+          /* Navigation buttons for mobile */
+          .mobile-nav-buttons {
+            display: flex;
+            background: white;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow-x: auto;
+            margin-bottom: 0;
+          }
+          
+          .day-btn {
+            flex: 1;
+            min-width: 80px;
+            padding: 1rem 0.5rem;
+            text-align: center;
+            background: #f8f9fa;
+            color: #6b7280;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            user-select: none;
+          }
+          
+          .day-btn:first-child {
+            border-radius: 12px 0 0 0;
+          }
+          
+          .day-btn:last-child {
+            border-radius: 0 12px 0 0;
+          }
+          
+          .day-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-bottom-color: #4f46e5;
+            font-weight: 600;
+          }
+          
+          .day-btn:hover:not(.active) {
+            background: #e5e7eb;
+            color: #374151;
+          }
+          
+          /* Screen reader only content */
+          .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+          }
+          
           .day-card {
             background: white;
             margin-bottom: 2rem;
@@ -311,32 +375,86 @@ sections:
           }
         }
         
-        /* Tablet optimizations */
+        /* Tablet - optimized table with horizontal scroll */
         @media (min-width: 768px) and (max-width: 1023px) {
           .mobile-schedule {
             display: none;
           }
           
+          .sala-agenda {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+          }
+          
           .agenda-table {
-            font-size: 0.9rem;
+            min-width: 700px; /* Reduced from 800px */
+            font-size: 0.85rem;
           }
           
           .agenda-table th,
           .agenda-table td {
-            padding: 0.8rem 0.6rem;
+            padding: 0.7rem 0.5rem;
           }
           
-          .agenda-table th:first-child,
+          /* Sticky time column header */
+          .agenda-table th:first-child {
+            width: 100px;
+            min-width: 100px;
+            position: sticky;
+            left: 0;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            z-index: 15;
+            color: white;
+            border-top-left-radius: 15px;
+          }
+          
+          /* Sticky time column cells */
           .agenda-table td:first-child {
-            width: 110px;
-            min-width: 110px;
+            width: 100px;
+            min-width: 100px;
+            position: sticky;
+            left: 0;
+            background-color: #f8f9fa !important;
+            z-index: 10;
+            font-weight: 600;
+            color: #2c3e50;
+            box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+          }
+          
+          /* Scroll indicator */
+          .sala-agenda::after {
+            content: "← Swipe to see all days →";
+            display: block;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.8rem;
+            color: #6b7280;
+            font-style: italic;
+            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.05), transparent);
+          }
+          
+          /* Hide scroll indicator when not needed */
+          @media (min-width: 900px) {
+            .agenda-table {
+              min-width: 100%;
+            }
+            
+            .sala-agenda::after {
+              display: none;
+            }
           }
         }
         
-        /* Desktop - hide mobile cards */
+        /* Desktop - hide mobile cards, show table */
         @media (min-width: 1024px) {
           .mobile-schedule {
             display: none;
+          }
+          
+          .agenda-table {
+            display: table;
           }
         }
         </style>
@@ -451,11 +569,21 @@ sections:
           </table>
         </div>
 
-        <!-- Mobile Card Layout -->
-        <div class="mobile-schedule" style="display: none;">
+        <!-- Mobile Card Layout - Simple approach for Hugo compatibility -->
+        <div class="mobile-schedule">
+          <!-- Screen reader announcements -->
+          <div id="schedule-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+          
+          <!-- Day Navigation Buttons -->
+          <div class="mobile-nav-buttons" role="tablist" aria-label="Conference days navigation">
+            <button class="day-btn active" onclick="showDay('monday')" role="tab" aria-selected="true" aria-controls="day-monday" tabindex="0">Mon<br>Mar 9</button>
+            <button class="day-btn" onclick="showDay('tuesday')" role="tab" aria-selected="false" aria-controls="day-tuesday" tabindex="-1">Tue<br>Mar 10</button>
+            <button class="day-btn" onclick="showDay('wednesday')" role="tab" aria-selected="false" aria-controls="day-wednesday" tabindex="-1">Wed<br>Mar 11</button>
+            <button class="day-btn" onclick="showDay('thursday')" role="tab" aria-selected="false" aria-controls="day-thursday" tabindex="-1">Thu<br>Mar 12</button>
+          </div>
+          
           <!-- Monday -->
-          <div class="day-card">
-            <div class="day-header">Monday<br>March 9</div>
+          <div class="day-card" id="day-monday" role="tabpanel" aria-labelledby="monday-tab" aria-hidden="false">
             <div class="day-schedule">
               <div class="time-slot" data-session="welcome">
                 <div class="time-badge">9:00-9:30</div>
@@ -515,8 +643,7 @@ sections:
           </div>
 
           <!-- Tuesday -->
-          <div class="day-card">
-            <div class="day-header">Tuesday<br>March 10</div>
+          <div class="day-card" id="day-tuesday" role="tabpanel" aria-labelledby="tuesday-tab" aria-hidden="true" style="display: none;">
             <div class="day-schedule">
               <div class="time-slot" data-session="welcome">
                 <div class="time-badge">9:00-9:30</div>
@@ -582,8 +709,7 @@ sections:
           </div>
 
           <!-- Wednesday -->
-          <div class="day-card">
-            <div class="day-header">Wednesday<br>March 11</div>
+          <div class="day-card" id="day-wednesday" style="display: none;">
             <div class="day-schedule">
               <div class="time-slot" data-session="welcome">
                 <div class="time-badge">9:00-9:30</div>
@@ -646,8 +772,7 @@ sections:
           </div>
 
           <!-- Thursday -->
-          <div class="day-card">
-            <div class="day-header">Thursday<br>March 12</div>
+          <div class="day-card" id="day-thursday" style="display: none;">
             <div class="day-schedule">
               <div class="time-slot" data-session="welcome">
                 <div class="time-badge">9:00-9:30</div>
@@ -713,6 +838,68 @@ sections:
             </div>
           </div>
         </div>
+
+        <script>
+        function showDay(day) {
+          // Hide all day cards with smooth transition
+          document.querySelectorAll('.day-card[id^="day-"]').forEach(card => {
+            card.style.display = 'none';
+            card.setAttribute('aria-hidden', 'true');
+          });
+          
+          // Remove active class and aria-selected from all buttons
+          document.querySelectorAll('.day-btn').forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-selected', 'false');
+          });
+          
+          // Show selected day
+          const selectedCard = document.getElementById('day-' + day);
+          selectedCard.style.display = 'block';
+          selectedCard.setAttribute('aria-hidden', 'false');
+          
+          // Add active class and aria-selected to clicked button
+          event.target.classList.add('active');
+          event.target.setAttribute('aria-selected', 'true');
+          
+          // Announce change for screen readers
+          const announcement = `Showing schedule for ${event.target.textContent.replace('\n', ' ')}`;
+          const ariaLive = document.getElementById('schedule-announcement');
+          if (ariaLive) {
+            ariaLive.textContent = announcement;
+          }
+        }
+        
+        // Keyboard navigation support
+        document.addEventListener('DOMContentLoaded', function() {
+          const buttons = document.querySelectorAll('.day-btn');
+          buttons.forEach((btn, index) => {
+            btn.addEventListener('keydown', function(e) {
+              let nextIndex;
+              switch(e.key) {
+                case 'ArrowLeft':
+                  e.preventDefault();
+                  nextIndex = index > 0 ? index - 1 : buttons.length - 1;
+                  buttons[nextIndex].focus();
+                  break;
+                case 'ArrowRight':
+                  e.preventDefault();
+                  nextIndex = index < buttons.length - 1 ? index + 1 : 0;
+                  buttons[nextIndex].focus();
+                  break;
+                case 'Home':
+                  e.preventDefault();
+                  buttons[0].focus();
+                  break;
+                case 'End':
+                  e.preventDefault();
+                  buttons[buttons.length - 1].focus();
+                  break;
+              }
+            });
+          });
+        });
+        </script>
 
         <div class="agenda-legend" style="margin-top: 1.5rem; padding: 2rem; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid rgba(255,255,255,0.2);">
           <h4 style="margin-bottom: 1.5rem; color: #2c3e50; font-weight: 600; font-size: 1.1rem;">Session Types:</h4>

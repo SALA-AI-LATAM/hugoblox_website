@@ -8,7 +8,7 @@ main:
     url: /#top
     weight: 10
   - name: Program
-    url: /sala2026
+    url: /program
     weight: 20
   - name: Previous Events
     url: /previous-events
