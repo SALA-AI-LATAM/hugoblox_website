@@ -9,7 +9,7 @@ We're excited to have you join us at the Summit of AI in LatAm 2026!
 **Event Details:**
 - **Date:** March 9-12, 2026
 - **Location:** Universidad San Francisco de Quito, Ecuador
-- **Application Deadline:** October 1st, 2025
+- **Application Deadline:** October 19th, 2025
 
 **Travel Support:** Students who do not live in Quito can apply for travel grants to help cover the cost of travel and accommodation.
 
