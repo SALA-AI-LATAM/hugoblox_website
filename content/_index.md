@@ -15,9 +15,9 @@ sections:
     content:
       title: <span class="text-3d">SALA '26</span>
       text: <span class="text-3d-subtle">**Summit of AI in LatAm**</span>
-      details: <span class="text-3d-subtle">March 9-12, 2026 | USFQ - Quito, Ecuador</span>
+      details: "<span class=\"text-3d-subtle\">March 9-12, 2026 | USFQ - Quito, Ecuador</span>"
       primary_action:
-        text: Register now until October 19th
+        text: "Register Now - Deadline: October 19"
         url: https://docs.google.com/forms/d/e/1FAIpQLScQp8GfLSdhmhW6mc4SggVgOa_SxYPmPGlaVLqS93Lur17ZZA/viewform
         # icon: ticket
       #items:
