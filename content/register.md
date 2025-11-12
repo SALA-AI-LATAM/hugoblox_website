@@ -19,7 +19,7 @@ Ready to be part of this incredible AI community gathering? Click the button bel
   <a href="https://docs.google.com/forms/d/e/1FAIpQLScQp8GfLSdhmhW6mc4SggVgOa_SxYPmPGlaVLqS93Lur17ZZA/viewform"
      target="_blank"
      style="display: inline-block; background-color: #6366f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 18px;">
-    Register Now
+    Registration Closed
   </a>
 </div>
 
