@@ -498,9 +498,9 @@ sections:
               <tr>
                 <td rowspan="2">11:00-12:00</td>
                 <td data-type="foundational" rowspan="2">Applied ML</td>
-                <td data-type="foundational" rowspan="2">TBA</td>
+                <td data-type="foundational" rowspan="2">Optimization<br><em>(Jose Cordova-Garcia)</em></td>
                 <td data-type="foundational" rowspan="2">LLMs</td>
-                <td data-type="specialized" rowspan="2">AI for Climate</td>
+                <td data-type="specialized" rowspan="2">AI for Climate<br><em>(Peter Battaglia)</em></td>
               </tr>
               <tr>
                 <!-- Cells spanned by rowspan above -->
