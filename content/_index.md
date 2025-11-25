@@ -110,24 +110,32 @@ sections:
   #    spacing:
   #      # Reduce bottom spacing so the testimonial appears vertically centered between sections
   #      padding: ["6rem", 0, 0, 0]
-  - block: cta-image-paragraph
-    id: pastSponsors
+  - block: logos
+    id: sponsors
     content:
-      items:
-      - title: Sponsors
-        text: Thanks to our sponsors for making this incredible event possible!
-        image: pastSponsors.png
+      title: "Sponsors"
+      text: "Thanks to our sponsors for making this incredible event possible!"
+      # Image path relative to assets/media/ folder
+      logo_folder: "sponsors/"
     design:
-      # Section background color (CSS class)
-      css_class: "bg-black"
-  #- block: logos
-  #  content:
-  #    title: "Past Sponsors"
-  #    text: "Thanks to our past sponsors for making this incredible event possible!"
-  #    # Image path relative to assets/media/ folder
-  #    logo_folder: "sponsors/"
+      spacing:
+        padding: ["2rem", 0, "2rem", 0]
   #  design:
-  #    card:
+  #    # Section background color (CSS class)
+  #    css_class: "bg-black"
+  #      # Card background color (CSS class)
+  #      css_class: "bg-primary-700"
+  #      css_style: ""
+  #- block: cta-image-paragraph
+  #  id: pastSponsors
+  #  content:
+  #    items:
+  #    - title: Sponsors
+  #      text: Thanks to our sponsors for making this incredible event possible!
+  #      image: pastSponsors.png
+  #  design:
+  #    # Section background color (CSS class)
+  #    css_class: "bg-black"
   #      # Card background color (CSS class)
   #      css_class: "bg-primary-700"
   #      css_style: ""

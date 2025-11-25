@@ -6,3 +6,52 @@
 .text-3d-subtle {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
+
+/* White translucent background only on logo grid */
+#sponsors .grid {
+  position: relative;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#sponsors .grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+#sponsors .grid > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Unify Confirmed Speakers title with Sponsors style */
+#confirmed-speakers .text-3xl {
+  font-size: 2.25rem !important; /* text-4xl */
+  line-height: 2.5rem !important;
+  font-weight: 500 !important; /* font-medium */
+  letter-spacing: -0.025em !important; /* tracking-tighter */
+  max-width: 42rem !important; /* max-w-2xl */
+}
+
+@media (min-width: 640px) {
+  #confirmed-speakers .text-3xl {
+    font-size: 3rem !important; /* sm:text-5xl */
+    line-height: 1 !important;
+  }
+}
+
+/* Update colors to match logos block */
+#confirmed-speakers .text-gray-900 {
+  color: rgb(24, 24, 27) !important; /* text-primary-900 equivalent */
+}
+
+.dark #confirmed-speakers .dark\:text-white {
+  color: rgb(212, 212, 216) !important; /* dark:text-primary-300 equivalent */
+}
