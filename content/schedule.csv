@@ -1,19 +1,19 @@
-Time,Monday March 9,Tuesday March 10,Wednesday March 11,Thursday March 12,Type
-9:00-9:30,Welcome remarks,Welcome remarks,Welcome remarks,Welcome remarks,welcome
-9:30-10:00,ML basics,RL,NLP (Thamar Solorio),Hackathon presentations,core
-10:00-10:30,ML basics,RL,NLP (Thamar Solorio),Hackathon presentations,core
-10:30-11:00,Break / Posters,Break / Posters,Break / Posters,Break / Posters,break
-11:00-11:30,Applied ML,TBA,LLMs,AI for Climate,core
-11:30-12:00,Applied ML,TBA,LLMs,AI for Climate,core
-12:00-12:30,Lunch,Lunch,Lunch,Lunch,break
-12:30-13:00,Lunch,Lunch,Lunch,Lunch,break
-13:00-13:30,Lunch,Lunch,Lunch,Lunch,break
-13:30-14:00,Vibe coding,Computer Vision,Post-training / RLHF (Nathan Lambert),AI & Climate (Sasha Luccioni),core
-14:00-14:30,Vibe coding,Computer Vision,Post-training / RLHF (Nathan Lambert),AI & Climate (Sasha Luccioni),core
-14:30-15:00,Break / Posters,Break / Posters,Break / Posters,Break / Posters,break
-15:00-15:30,Colabs/Hackathon intro,TBA,LatamGPT (Luciana Benotti),Samy Bengio Keynote,special
-15:30-16:00,Colabs/Hackathon intro,TBA,LatamGPT (Luciana Benotti),Samy Bengio Keynote,special
-16:00-16:30,Colabs/Hackathon,Colabs/Hackathon,Colabs/Hackathon,Hackathon awards,hackathon
-16:30-17:00,Colabs/Hackathon,Colabs/Hackathon,Colabs/Hackathon,Hackathon awards,hackathon
-17:00-17:30,Colabs/Hackathon,Parallel panels,Parallel panels,End of event reception,special
-17:30-18:00,Colabs/Hackathon,Parallel panels,Parallel panels,End of event reception,special
+Time,Monday March 9,Type_Mon,Tuesday March 10,Type_Tue,Wednesday March 11,Type_Wed,Thursday March 12,Type_Thu
+9:00-9:30,Welcome remarks,welcome,Welcome remarks,welcome,Welcome remarks,welcome,Welcome remarks,welcome
+9:30-10:00,ML basics,foundational,RL,foundational,NLP (Thamar Solorio),foundational,Hackathon presentations,hackathon
+10:00-10:30,ML basics,foundational,RL,foundational,NLP (Thamar Solorio),foundational,Hackathon presentations,hackathon
+10:30-11:00,Break / Posters,break,Break / Posters,break,Break / Posters,break,Break / Posters,break
+11:00-11:30,Applied ML,foundational,Optimization (Jose Cordova-Garcia),foundational,LLMs,foundational,AI for Climate (Peter Battaglia),specialized
+11:30-12:00,Applied ML,foundational,Optimization (Jose Cordova-Garcia),foundational,LLMs,foundational,AI for Climate (Peter Battaglia),specialized
+12:00-12:30,Lunch,break,Lunch,break,Lunch,break,Lunch,break
+12:30-13:00,Lunch,break,Lunch,break,Lunch,break,Lunch,break
+13:00-13:30,Lunch,break,Lunch,break,Lunch,break,Lunch,break
+13:30-14:00,Vibe coding,specialized,Computer Vision,foundational,Post-training / RLHF (Nathan Lambert),specialized,AI & Climate (Sasha Luccioni),specialized
+14:00-14:30,Vibe coding,specialized,Computer Vision,foundational,Post-training / RLHF (Nathan Lambert),specialized,AI & Climate (Sasha Luccioni),specialized
+14:30-15:00,Break / Posters,break,Break / Posters,break,Break / Posters,break,Break / Posters,break
+15:00-15:30,Colabs/Hackathon intro,hackathon,Diffusion models,specialized,Human-in-the-loop LLMs (Luciana Benotti),specialized,Keynote (Samy Bengio),keynote
+15:30-16:00,Colabs/Hackathon intro,hackathon,Diffusion models,specialized,Human-in-the-loop LLMs (Luciana Benotti),specialized,Keynote (Samy Bengio),keynote
+16:00-16:30,Colabs/Hackathon,hackathon,Colabs/Hackathon,hackathon,Colabs/Hackathon,hackathon,Hackathon awards,hackathon
+16:30-17:00,Colabs/Hackathon,hackathon,Colabs/Hackathon,hackathon,Colabs/Hackathon,hackathon,Hackathon awards,hackathon
+17:00-17:30,Colabs/Hackathon,hackathon,Parallel panels,special,Parallel panels,special,End of event reception,special
+17:30-18:00,Colabs/Hackathon,hackathon,Parallel panels,special,Parallel panels,special,End of event reception,special

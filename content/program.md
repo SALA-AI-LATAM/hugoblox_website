@@ -460,7 +460,7 @@ sections:
         </style>
 
         <div class="sala-agenda">
-          <table class="agenda-table">
+          <table class="agenda-table" id="schedule-table">
             <thead>
               <tr>
                 <th>Time</th>
@@ -470,408 +470,274 @@ sections:
                 <th>Thursday<br>March 12</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>9:00-9:30</td>
-                <td data-type="welcome">Welcome remarks</td>
-                <td data-type="welcome">Welcome remarks</td>
-                <td data-type="welcome">Welcome remarks</td>
-                <td data-type="welcome">Welcome remarks</td>
-              </tr>
-              <tr>
-                <td rowspan="2">9:30-10:30</td>
-                <td data-type="foundational" rowspan="2">ML basics</td>
-                <td data-type="foundational" rowspan="2">RL</td>
-                <td data-type="foundational" rowspan="2">NLP<br><em>(Thamar Solorio)</em></td>
-                <td data-type="hackathon" rowspan="2">Hackathon presentations</td>
-              </tr>
-              <tr>
-                <!-- Cells spanned by rowspan above -->
-              </tr>
-              <tr>
-                <td>10:30-11:00</td>
-                <td data-type="break">Break / Posters</td>
-                <td data-type="break">Break / Posters</td>
-                <td data-type="break">Break / Posters</td>
-                <td data-type="break">Break / Posters</td>
-              </tr>
-              <tr>
-                <td rowspan="2">11:00-12:00</td>
-                <td data-type="foundational" rowspan="2">Applied ML</td>
-                <td data-type="foundational" rowspan="2">Optimization<br><em>(Jose Cordova-Garcia)</em></td>
-                <td data-type="foundational" rowspan="2">LLMs</td>
-                <td data-type="specialized" rowspan="2">AI for Climate<br><em>(Peter Battaglia)</em></td>
-              </tr>
-              <tr>
-                <!-- Cells spanned by rowspan above -->
-              </tr>
-              <tr>
-                <td rowspan="3">12:00-13:30</td>
-                <td data-type="break" rowspan="3">Lunch</td>
-                <td data-type="break" rowspan="3">Lunch</td>
-                <td data-type="break" rowspan="3">Lunch</td>
-                <td data-type="break" rowspan="3">Lunch</td>
-              </tr>
-              <tr>
-                <!-- Cells spanned by rowspan above -->
-              </tr>
-              <tr>
-                <!-- Cells spanned by rowspan above -->
-              </tr>
-              <tr>
-                <td rowspan="2">13:30-14:30</td>
-                <td data-type="specialized" rowspan="2">Vibe coding</td>
-                <td data-type="foundational" rowspan="2">Computer Vision</td>
-                <td data-type="specialized" rowspan="2">Post-training / RLHF (Nathan Lambert)</td>
-                <td data-type="specialized" rowspan="2">AI & Climate<br><em>(Sasha Luccioni)</em></td>
-              </tr>
-              <tr>
-                <!-- Cells spanned by rowspan above -->
-              </tr>
-              <tr>
-                <td>14:30-15:00</td>
-                <td data-type="break">Break / Posters</td>
-                <td data-type="break">Break / Posters</td>
-                <td data-type="break">Break / Posters</td>
-                <td data-type="break">Break / Posters</td>
-              </tr>
-              <tr>
-                <td rowspan="2">15:00-16:00</td>
-                <td data-type="hackathon" rowspan="2">Colabs/Hackathon intro</td>
-                <td data-type="specialized" rowspan="2">TBA</td>
-                <td data-type="special" rowspan="2">LatamGPT<br><em>(Luciana Benotti)</em></td>
-                <td data-type="keynote" rowspan="2">Samy Bengio Keynote</td>
-              </tr>
-              <tr>
-                <!-- Cells spanned by rowspan above -->
-              </tr>
-              <tr>
-                <td rowspan="2">16:00-17:00</td>
-                <td data-type="hackathon" rowspan="4">Colabs/Hackathon</td>
-                <td data-type="hackathon" rowspan="2">Colabs/Hackathon</td>
-                <td data-type="hackathon" rowspan="2">Colabs/Hackathon</td>
-                <td data-type="hackathon" rowspan="2">Hackathon awards</td>
-              </tr>
-              <tr>
-                <!-- Cells spanned by rowspan above -->
-              </tr>
-              <tr>
-                <td rowspan="2">17:00-18:00</td>
-                <!-- Colabs/Hackathon continues with rowspan="4" from above -->
-                <td data-type="special" rowspan="2">Parallel panels</td>
-                <td data-type="special" rowspan="2">Parallel panels</td>
-                <td data-type="special" rowspan="2">End of event reception</td>
-              </tr>
-              <tr>
-                <!-- Cells spanned by rowspan above -->
-              </tr>
+            <tbody id="schedule-tbody">
+              <!-- Schedule will be loaded dynamically from CSV -->
             </tbody>
           </table>
         </div>
 
-        <!-- Mobile Card Layout - Simple approach for Hugo compatibility -->
-        <div class="mobile-schedule">
+        <!-- Mobile Card Layout -->
+        <div class="mobile-schedule" id="mobile-schedule">
           <!-- Screen reader announcements -->
           <div id="schedule-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></div>
           
           <!-- Day Navigation Buttons -->
-          <div class="mobile-nav-buttons" role="tablist" aria-label="Conference days navigation">
-            <button class="day-btn active" onclick="showDay('monday')" role="tab" aria-selected="true" aria-controls="day-monday" tabindex="0">Mon<br>Mar 9</button>
-            <button class="day-btn" onclick="showDay('tuesday')" role="tab" aria-selected="false" aria-controls="day-tuesday" tabindex="-1">Tue<br>Mar 10</button>
-            <button class="day-btn" onclick="showDay('wednesday')" role="tab" aria-selected="false" aria-controls="day-wednesday" tabindex="-1">Wed<br>Mar 11</button>
-            <button class="day-btn" onclick="showDay('thursday')" role="tab" aria-selected="false" aria-controls="day-thursday" tabindex="-1">Thu<br>Mar 12</button>
+          <div class="mobile-nav-buttons" role="tablist" aria-label="Conference days navigation" id="mobile-nav-buttons">
+            <!-- Buttons will be loaded dynamically -->
           </div>
           
-          <!-- Monday -->
-          <div class="day-card" id="day-monday" role="tabpanel" aria-labelledby="monday-tab" aria-hidden="false">
-            <div class="day-schedule">
-              <div class="time-slot" data-session="welcome">
-                <div class="time-badge">9:00-9:30</div>
-                <div class="session-content">
-                  <div class="session-title">Welcome remarks</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="foundational">
-                <div class="time-badge">9:30-10:30</div>
-                <div class="session-content">
-                  <div class="session-title">ML basics</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">10:30-11:00</div>
-                <div class="session-content">
-                  <div class="session-title">Break / Posters</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="foundational">
-                <div class="time-badge">11:00-12:00</div>
-                <div class="session-content">
-                  <div class="session-title">Applied ML</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">12:00-13:30</div>
-                <div class="session-content">
-                  <div class="session-title">Lunch</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="specialized">
-                <div class="time-badge">13:30-14:30</div>
-                <div class="session-content">
-                  <div class="session-title">Vibe coding</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">14:30-15:00</div>
-                <div class="session-content">
-                  <div class="session-title">Break / Posters</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="hackathon">
-                <div class="time-badge">15:00-16:00</div>
-                <div class="session-content">
-                  <div class="session-title">Colabs/Hackathon intro</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="hackathon">
-                <div class="time-badge">16:00-18:00</div>
-                <div class="session-content">
-                  <div class="session-title">Colabs/Hackathon</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tuesday -->
-          <div class="day-card" id="day-tuesday" role="tabpanel" aria-labelledby="tuesday-tab" aria-hidden="true" style="display: none;">
-            <div class="day-schedule">
-              <div class="time-slot" data-session="welcome">
-                <div class="time-badge">9:00-9:30</div>
-                <div class="session-content">
-                  <div class="session-title">Welcome remarks</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="foundational">
-                <div class="time-badge">9:30-10:30</div>
-                <div class="session-content">
-                  <div class="session-title">RL</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">10:30-11:00</div>
-                <div class="session-content">
-                  <div class="session-title">Break / Posters</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="foundational">
-                <div class="time-badge">11:00-12:00</div>
-                <div class="session-content">
-                  <div class="session-title">TBA</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">12:00-13:30</div>
-                <div class="session-content">
-                  <div class="session-title">Lunch</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="foundational">
-                <div class="time-badge">13:30-14:30</div>
-                <div class="session-content">
-                  <div class="session-title">Computer Vision</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">14:30-15:00</div>
-                <div class="session-content">
-                  <div class="session-title">Break / Posters</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="specialized">
-                <div class="time-badge">15:00-16:00</div>
-                <div class="session-content">
-                  <div class="session-title">TBA</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="hackathon">
-                <div class="time-badge">16:00-17:00</div>
-                <div class="session-content">
-                  <div class="session-title">Colabs/Hackathon</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="special">
-                <div class="time-badge">17:00-18:00</div>
-                <div class="session-content">
-                  <div class="session-title">Parallel panels</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Wednesday -->
-          <div class="day-card" id="day-wednesday" style="display: none;">
-            <div class="day-schedule">
-              <div class="time-slot" data-session="welcome">
-                <div class="time-badge">9:00-9:30</div>
-                <div class="session-content">
-                  <div class="session-title">Welcome remarks</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="foundational">
-                <div class="time-badge">9:30-10:30</div>
-                <div class="session-content">
-                  <div class="session-title">NLP</div>
-                  <div class="session-speaker">(Thamar Solorio)</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">10:30-11:00</div>
-                <div class="session-content">
-                  <div class="session-title">Break / Posters</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="foundational">
-                <div class="time-badge">11:00-12:00</div>
-                <div class="session-content">
-                  <div class="session-title">LLMs</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">12:00-13:30</div>
-                <div class="session-content">
-                  <div class="session-title">Lunch</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="specialized">
-                <div class="time-badge">13:30-14:30</div>
-                <div class="session-content">
-                  <div class="session-title">Post-training / RLHF</div>
-                  <div class="session-speaker">(Nathan Lambert)</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">14:30-15:00</div>
-                <div class="session-content">
-                  <div class="session-title">Break / Posters</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="special">
-                <div class="time-badge">15:00-16:00</div>
-                <div class="session-content">
-                  <div class="session-title">LatamGPT</div>
-                  <div class="session-speaker">(Luciana Benotti)</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="hackathon">
-                <div class="time-badge">16:00-18:00</div>
-                <div class="session-content">
-                  <div class="session-title">Colabs/Hackathon</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Thursday -->
-          <div class="day-card" id="day-thursday" style="display: none;">
-            <div class="day-schedule">
-              <div class="time-slot" data-session="welcome">
-                <div class="time-badge">9:00-9:30</div>
-                <div class="session-content">
-                  <div class="session-title">Welcome remarks</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="hackathon">
-                <div class="time-badge">9:30-10:30</div>
-                <div class="session-content">
-                  <div class="session-title">Hackathon presentations</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">10:30-11:00</div>
-                <div class="session-content">
-                  <div class="session-title">Break / Posters</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="specialized">
-                <div class="time-badge">11:00-12:00</div>
-                <div class="session-content">
-                  <div class="session-title">AI for Climate</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">12:00-13:30</div>
-                <div class="session-content">
-                  <div class="session-title">Lunch</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="specialized">
-                <div class="time-badge">13:30-14:30</div>
-                <div class="session-content">
-                  <div class="session-title">AI & Climate</div>
-                  <div class="session-speaker">(Sasha Luccioni)</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="break">
-                <div class="time-badge">14:30-15:00</div>
-                <div class="session-content">
-                  <div class="session-title">Break / Posters</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="keynote">
-                <div class="time-badge">15:00-16:00</div>
-                <div class="session-content">
-                  <div class="session-title">Samy Bengio Keynote</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="hackathon">
-                <div class="time-badge">16:00-17:00</div>
-                <div class="session-content">
-                  <div class="session-title">Hackathon awards</div>
-                </div>
-              </div>
-              <div class="time-slot" data-session="special">
-                <div class="time-badge">17:00-18:00</div>
-                <div class="session-content">
-                  <div class="session-title">End of event reception</div>
-                </div>
-              </div>
-            </div>
+          <!-- Day cards container -->
+          <div id="mobile-days-container">
+            <!-- Day cards will be loaded dynamically from CSV -->
           </div>
         </div>
 
         <script>
+        // Mobile day navigation function
         function showDay(day) {
-          // Hide all day cards with smooth transition
           document.querySelectorAll('.day-card[id^="day-"]').forEach(card => {
             card.style.display = 'none';
             card.setAttribute('aria-hidden', 'true');
           });
           
-          // Remove active class and aria-selected from all buttons
           document.querySelectorAll('.day-btn').forEach(btn => {
             btn.classList.remove('active');
             btn.setAttribute('aria-selected', 'false');
           });
           
-          // Show selected day
           const selectedCard = document.getElementById('day-' + day);
-          selectedCard.style.display = 'block';
-          selectedCard.setAttribute('aria-hidden', 'false');
+          if (selectedCard) {
+            selectedCard.style.display = 'block';
+            selectedCard.setAttribute('aria-hidden', 'false');
+          }
           
-          // Add active class and aria-selected to clicked button
           event.target.classList.add('active');
           event.target.setAttribute('aria-selected', 'true');
           
-          // Announce change for screen readers
-          const announcement = `Showing schedule for ${event.target.textContent.replace('\n', ' ')}`;
+          const announcement = `Showing schedule for ${event.target.textContent.replace(/\n/g, ' ')}`;
           const ariaLive = document.getElementById('schedule-announcement');
           if (ariaLive) {
             ariaLive.textContent = announcement;
           }
         }
-        
-        // Keyboard navigation support
-        document.addEventListener('DOMContentLoaded', function() {
+
+        // Parse CSV data
+        function parseCSV(text) {
+          const lines = text.trim().split('\n');
+          const headers = lines[0].split(',');
+          const data = [];
+          
+          for (let i = 1; i < lines.length; i++) {
+            const values = lines[i].split(',');
+            const row = {};
+            headers.forEach((header, index) => {
+              row[header] = values[index] || '';
+            });
+            data.push(row);
+          }
+          
+          return data;
+        }
+
+        // Extract session title and speaker
+        function parseSession(sessionText) {
+          const speakerMatch = sessionText.match(/^(.+?)\s*\(([^)]+)\)$/);
+          if (speakerMatch) {
+            return {
+              title: speakerMatch[1].trim(),
+              speaker: speakerMatch[2].trim()
+            };
+          }
+          return { title: sessionText.trim(), speaker: null };
+        }
+
+        // Generate desktop table with rowspan
+        function generateTable(scheduleData) {
+          const tbody = document.getElementById('schedule-tbody');
+          if (!tbody) return;
+          
+          tbody.innerHTML = '';
+          
+          const days = ['Monday March 9', 'Tuesday March 10', 'Wednesday March 11', 'Thursday March 12'];
+          const typeKeys = ['Type_Mon', 'Type_Tue', 'Type_Wed', 'Type_Thu'];
+          
+          // Track which rows are spanned (to create empty rows)
+          const spanTracker = new Array(scheduleData.length).fill(0);
+          
+          for (let i = 0; i < scheduleData.length; i++) {
+            // Skip if this row is spanned from above
+            if (spanTracker[i] > 0) {
+              const tr = document.createElement('tr');
+              tr.appendChild(document.createComment(' Cells spanned by rowspan above '));
+              tbody.appendChild(tr);
+              continue;
+            }
+            
+            const row = scheduleData[i];
+            const tr = document.createElement('tr');
+            
+            // Check for consecutive same sessions for rowspan
+            let rowspan = 1;
+            for (let j = i + 1; j < scheduleData.length; j++) {
+              const nextRow = scheduleData[j];
+              let allSame = true;
+              
+              for (let k = 0; k < days.length; k++) {
+                if (nextRow[days[k]] !== row[days[k]] || nextRow[typeKeys[k]] !== row[typeKeys[k]]) {
+                  allSame = false;
+                  break;
+                }
+              }
+              
+              if (allSame) {
+                rowspan++;
+                spanTracker[j] = 1; // Mark this row as spanned
+              } else {
+                break;
+              }
+            }
+            
+            // Time cell
+            const timeCell = document.createElement('td');
+            if (rowspan > 1) {
+              const startTime = row.Time.split('-')[0];
+              const endTime = scheduleData[i + rowspan - 1].Time.split('-')[1];
+              timeCell.textContent = `${startTime}-${endTime}`;
+              timeCell.rowSpan = rowspan;
+            } else {
+              timeCell.textContent = row.Time;
+            }
+            tr.appendChild(timeCell);
+            
+            // Session cells
+            days.forEach((day, idx) => {
+              const sessionInfo = parseSession(row[day]);
+              const td = document.createElement('td');
+              td.setAttribute('data-type', row[typeKeys[idx]]);
+              
+              if (rowspan > 1) {
+                td.rowSpan = rowspan;
+              }
+              
+              if (sessionInfo.speaker) {
+                td.innerHTML = `${sessionInfo.title}<br><em>(${sessionInfo.speaker})</em>`;
+              } else {
+                td.textContent = sessionInfo.title;
+              }
+              
+              tr.appendChild(td);
+            });
+            
+            tbody.appendChild(tr);
+          }
+        }
+
+        // Generate mobile cards
+        function generateMobileCards(scheduleData) {
+          const navButtons = document.getElementById('mobile-nav-buttons');
+          const container = document.getElementById('mobile-days-container');
+          
+          if (!navButtons || !container) return;
+          
+          const days = [
+            { key: 'Monday March 9', typeKey: 'Type_Mon', id: 'monday', label: 'Mon<br>Mar 9' },
+            { key: 'Tuesday March 10', typeKey: 'Type_Tue', id: 'tuesday', label: 'Tue<br>Mar 10' },
+            { key: 'Wednesday March 11', typeKey: 'Type_Wed', id: 'wednesday', label: 'Wed<br>Mar 11' },
+            { key: 'Thursday March 12', typeKey: 'Type_Thu', id: 'thursday', label: 'Thu<br>Mar 12' }
+          ];
+          
+          // Generate navigation buttons
+          navButtons.innerHTML = '';
+          days.forEach((day, index) => {
+            const btn = document.createElement('button');
+            btn.className = 'day-btn' + (index === 0 ? ' active' : '');
+            btn.innerHTML = day.label;
+            btn.onclick = function() { showDay(day.id); };
+            btn.setAttribute('role', 'tab');
+            btn.setAttribute('aria-selected', index === 0 ? 'true' : 'false');
+            btn.setAttribute('aria-controls', `day-${day.id}`);
+            btn.setAttribute('tabindex', index === 0 ? '0' : '-1');
+            navButtons.appendChild(btn);
+          });
+          
+          // Generate day cards
+          container.innerHTML = '';
+          days.forEach((day, dayIndex) => {
+            const card = document.createElement('div');
+            card.className = 'day-card';
+            card.id = `day-${day.id}`;
+            card.setAttribute('role', 'tabpanel');
+            card.setAttribute('aria-labelledby', `${day.id}-tab`);
+            card.setAttribute('aria-hidden', dayIndex === 0 ? 'false' : 'true');
+            if (dayIndex > 0) {
+              card.style.display = 'none';
+            }
+            
+            const schedule = document.createElement('div');
+            schedule.className = 'day-schedule';
+            
+            // Group consecutive same sessions
+            let i = 0;
+            while (i < scheduleData.length) {
+              const row = scheduleData[i];
+              const sessionText = row[day.key];
+              const sessionType = row[day.typeKey];
+              
+              // Look ahead for same session
+              let endIdx = i;
+              while (endIdx + 1 < scheduleData.length &&
+                     scheduleData[endIdx + 1][day.key] === sessionText &&
+                     scheduleData[endIdx + 1][day.typeKey] === sessionType) {
+                endIdx++;
+              }
+              
+              const timeSlot = document.createElement('div');
+              timeSlot.className = 'time-slot';
+              timeSlot.setAttribute('data-session', sessionType);
+              
+              const timeBadge = document.createElement('div');
+              timeBadge.className = 'time-badge';
+              if (i === endIdx) {
+                timeBadge.textContent = row.Time;
+              } else {
+                const startTime = row.Time.split('-')[0];
+                const endTime = scheduleData[endIdx].Time.split('-')[1];
+                timeBadge.textContent = `${startTime}-${endTime}`;
+              }
+              
+              const sessionContent = document.createElement('div');
+              sessionContent.className = 'session-content';
+              
+              const sessionInfo = parseSession(sessionText);
+              const sessionTitle = document.createElement('div');
+              sessionTitle.className = 'session-title';
+              sessionTitle.textContent = sessionInfo.title;
+              sessionContent.appendChild(sessionTitle);
+              
+              if (sessionInfo.speaker) {
+                const sessionSpeaker = document.createElement('div');
+                sessionSpeaker.className = 'session-speaker';
+                sessionSpeaker.textContent = `(${sessionInfo.speaker})`;
+                sessionContent.appendChild(sessionSpeaker);
+              }
+              
+              timeSlot.appendChild(timeBadge);
+              timeSlot.appendChild(sessionContent);
+              schedule.appendChild(timeSlot);
+              
+              i = endIdx + 1;
+            }
+            
+            card.appendChild(schedule);
+            container.appendChild(card);
+          });
+          
+          // Setup keyboard navigation
+          setupKeyboardNavigation();
+        }
+
+        // Setup keyboard navigation for mobile buttons
+        function setupKeyboardNavigation() {
           const buttons = document.querySelectorAll('.day-btn');
           buttons.forEach((btn, index) => {
             btn.addEventListener('keydown', function(e) {
@@ -898,6 +764,29 @@ sections:
               }
             });
           });
+        }
+
+        // Load and process schedule
+        document.addEventListener('DOMContentLoaded', async function() {
+          try {
+            const response = await fetch('/schedule.csv');
+            if (!response.ok) {
+              throw new Error('Failed to load schedule');
+            }
+            
+            const csvText = await response.text();
+            const scheduleData = parseCSV(csvText);
+            
+            generateTable(scheduleData);
+            generateMobileCards(scheduleData);
+          } catch (error) {
+            console.error('Error loading schedule:', error);
+            // Fallback message
+            const tbody = document.getElementById('schedule-tbody');
+            if (tbody) {
+              tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; padding: 2rem;">Schedule loading error. Please refresh the page.</td></tr>';
+            }
+          }
         });
         </script>
 
