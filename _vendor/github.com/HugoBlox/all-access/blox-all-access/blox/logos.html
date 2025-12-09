@@ -24,7 +24,7 @@
       {{ $image := . }}
       {{- $isSVG := eq $image.MediaType.SubType "svg" -}}
       {{ if not $isSVG }}
-      {{ $image = $image.Fit "140x140 webp drawing" }}
+      {{ $image = $image.Fit "400x400 webp drawing" }}
       {{ end }}
       <div class="flex items-center justify-center">
         <img data-nimg="1" decoding="async" loading="lazy"  style="color:transparent" src="{{$image.RelPermalink}}" alt="logo" {{if not $isSVG}}width="{{$image.Width}}" height="{{$image.Height}}"{{end}}>
