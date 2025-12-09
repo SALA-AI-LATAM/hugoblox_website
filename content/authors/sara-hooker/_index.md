@@ -4,15 +4,15 @@ first_name: Sara
 last_name: Hooker
 
 # Role/position
-role: Director
+role: Co-founder
 
 # Organizations/Affiliations
 organizations:
-  - name: Cohere for AI
+  - name: Adaption Labs
     url: https://www.sarahooker.me/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Sarah Hooker is a Director at Cohere and she leads Cohere For AI, a research lab that seeks to solve complex machine learning problems. She leads a team of researchers and engineers working on making large language models more efficient, safe and grounded. Prior to Cohere, Sarah was a research scientist at Google Brain doing work on training models that go beyond test-set accuracy to fulfill multiple desired criteria -- interpretable, compact, fair and robust.
+bio: Sara Hooker is Co-founder and CEO of Adaption Labs, a startup building AI systems that can continuously adapt and learn from real-world experiences. Previously, she was VP of AI Research at Cohere, where she led Cohere Labs training small AI models for enterprise use cases. Prior to that, she was a research scientist at Google Brain working on training models that go beyond test-set accuracy to fulfill multiple criteria -- interpretable, compact, fair and robust.
 
 interests:
   - Artificial Intelligence
@@ -32,6 +32,7 @@ profiles:
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - PastSpeakers
+  - ConfirmedSpeakers
 ---
 
-Sarah Hooker is a Director at Cohere and she leads Cohere For AI, a research lab that seeks to solve complex machine learning problems. She leads a team of researchers and engineers working on making large language models more efficient, safe and grounded. Prior to Cohere, Sarah was a research scientist at Google Brain doing work on training models that go beyond test-set accuracy to fulfill multiple desired criteria -- interpretable, compact, fair and robust.
+Sara Hooker is Co-founder and CEO of Adaption Labs, a startup building AI systems that can continuously adapt and learn from real-world experiences. Previously, she was VP of AI Research at Cohere, where she led Cohere Labs training small AI models for enterprise use cases. Prior to that, she was a research scientist at Google Brain working on training models that go beyond test-set accuracy to fulfill multiple criteria -- interpretable, compact, fair and robust.
