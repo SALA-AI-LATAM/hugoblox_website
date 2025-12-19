@@ -110,13 +110,26 @@ sections:
   #    spacing:
   #      # Reduce bottom spacing so the testimonial appears vertically centered between sections
   #      padding: ["6rem", 0, 0, 0]
-  - block: logos
+  - block: sponsors-tiered
     id: sponsors
     content:
       title: "Sponsors"
       text: "Thanks to our sponsors for making this incredible event possible!"
-      # Image path relative to assets/media/ folder
-      logo_folder: "sponsors/"
+      tiers:
+        - name: "VISIONARY"
+          logos:
+            - "sponsors/Google.svg"
+            - "sponsors/Google_DeepMind_logo-modified.svg"
+        - name: "PIONEER"
+          logos:
+            - "sponsors/apple_horizontal.svg"
+        - name: "CATALYST"
+          logos:
+            - "sponsors/hopper dean-modified.png"
+            - "sponsors/mbzuai_logo.png"
+        - name: "IMPACT"
+          logos:
+            - "sponsors/Amazon_logo.svg"
     design:
       spacing:
         padding: ["2rem", 0, "2rem", 0]

@@ -1,0 +1,49 @@
+{{/* Custom Tiered Sponsors Block */}}
+{{/* Based on Hugo Blox Logos Block */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+<section class="py-20 sm:py-32">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    {{ with $block.content.title }}
+    <h2 class="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-primary-900 dark:text-primary-300 sm:text-5xl">
+      {{ . | markdownify }}
+    </h2>
+    {{end}}
+    {{ with $block.content.text }}
+    <p class="text-xl text-center my-5">{{ . | markdownify }}</p>
+    {{end}}
+    
+    {{/* Single grid container - this creates the translucent box */}}
+    <div class="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
+      {{/* Loop through each tier */}}
+      {{ range $block.content.tiers }}
+        {{/* Tier title spans all columns */}}
+        {{ with .name }}
+        <h3 class="text-center font-semibold text-lg tracking-widest mb-2 mt-6 first:mt-0 text-primary-700 dark:text-primary-500 uppercase" style="grid-column: 1 / -1;">
+          {{ . }}
+        </h3>
+        {{end}}
+        
+        {{/* Container for this tier's logos - spans all columns */}}
+        <div class="flex flex-wrap items-center justify-center gap-x-32 gap-y-12 md:gap-x-16 lg:gap-x-32" style="grid-column: 1 / -1;">
+          {{/* Logo items */}}
+          {{ range .logos }}
+            {{ $logoPath := printf "media/%s" . }}
+            {{ $image := resources.Get $logoPath }}
+            {{ if $image }}
+              {{- $isSVG := eq $image.MediaType.SubType "svg" -}}
+              {{ if not $isSVG }}
+                {{ $image = $image.Fit "400x400 webp drawing" }}
+              {{ end }}
+              <div class="flex items-center justify-center" style="max-width: 250px; max-height: 100px;">
+                <img data-nimg="1" decoding="async" loading="lazy" style="color:transparent; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" src="{{$image.RelPermalink}}" alt="logo" {{if not $isSVG}}width="{{$image.Width}}" height="{{$image.Height}}"{{end}}>
+              </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
