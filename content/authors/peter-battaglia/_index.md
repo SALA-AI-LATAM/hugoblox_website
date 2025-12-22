@@ -4,7 +4,7 @@ first_name: Peter
 last_name: Battaglia
 
 # Role/position
-role: Senior Director of Research
+role: Senior Director, Research, Google DeepMind
 
 # Organizations/Affiliations
 organizations:

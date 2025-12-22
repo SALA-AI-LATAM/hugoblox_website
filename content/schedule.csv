@@ -8,8 +8,8 @@ Time,Monday March 9,Type_Mon,Tuesday March 10,Type_Tue,Wednesday March 11,Type_W
 12:00-12:30,Lunch,break,Lunch,break,Lunch,break,Lunch,break
 12:30-13:00,Lunch,break,Lunch,break,Lunch,break,Lunch,break
 13:00-13:30,Lunch,break,Lunch,break,Lunch,break,Lunch,break
-13:30-14:00,Vibe coding,specialized,Computer Vision,foundational,Post-training / RLHF (Nathan Lambert),specialized,AI & Climate (Sasha Luccioni),specialized
-14:00-14:30,Vibe coding,specialized,Computer Vision,foundational,Post-training / RLHF (Nathan Lambert),specialized,AI & Climate (Sasha Luccioni),specialized
+13:30-14:00,Vibe coding,specialized,Computer Vision (David Fleet),foundational,Post-training / RLHF (Nathan Lambert),specialized,AI & Climate (Sasha Luccioni),specialized
+14:00-14:30,Vibe coding,specialized,Computer Vision (David Fleet),foundational,Post-training / RLHF (Nathan Lambert),specialized,AI & Climate (Sasha Luccioni),specialized
 14:30-15:00,Break / Posters,break,Break / Posters,break,Break / Posters,break,Break / Posters,break
 15:00-15:30,Colabs/Hackathon intro,hackathon,Diffusion models,specialized,Human-in-the-loop LLMs (Luciana Benotti),specialized,Keynote (Samy Bengio),keynote
 15:30-16:00,Colabs/Hackathon intro,hackathon,Diffusion models,specialized,Human-in-the-loop LLMs (Luciana Benotti),specialized,Keynote (Samy Bengio),keynote
