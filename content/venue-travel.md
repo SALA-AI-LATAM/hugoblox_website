@@ -11,20 +11,15 @@ design:
 
 **Universidad San Francisco de Quito - Campus Cumbayá**
 
-Diego de Robles y Vía Interoceánica  
-Cumbayá, Quito, Pichincha 170157, Ecuador  
-Phone: +593 2-297-1700  
+**Main Conference Venue:** Teatro Shakespeare
+**Location:** Campus Hayek, Paseo San Francisco
+
+Diego de Robles y Vía Interoceánica
+Cumbayá, Quito, Pichincha 170157, Ecuador
+Phone: +593 2-297-1700
 Website: [www.usfq.edu.ec](https://www.usfq.edu.ec)
 
-Universidad San Francisco de Quito (USFQ) is located in the beautiful Cumbayá valley, northeast of Quito's historic center. The Campus Cumbayá, also known as Campus Santiago Gangotena, features modern academic facilities, a comprehensive library, sports facilities, medical clinic, and beautiful green spaces. The campus is well-equipped for conferences and events, providing an ideal setting for SALA '26.
-
-**Campus Facilities:**
-- Modern academic buildings and conference spaces
-- University library
-- On-campus medical clinic
-- Sports and recreation facilities
-- Dining services and cafeterias
-- Parking available (please arrive early during events)
+Universidad San Francisco de Quito (USFQ) is located in the beautiful Cumbayá valley, northeast of Quito's historic center. SALA '26 will take place at the Teatro Shakespeare, situated in Campus Hayek at the end of Paseo San Francisco. 
 
 ---
 
@@ -32,7 +27,7 @@ Universidad San Francisco de Quito (USFQ) is located in the beautiful Cumbayá v
 
 ### Recommended Areas to Stay
 
-We recommend staying in the **Parroquia Iñaquito** and **Cumbayá** neighborhoods for convenient access to the conference venue and a comfortable experience in Quito.
+We recommend staying in the **[Parroquia Iñaquito](https://share.google/1zU6Wt4xxMIW8huFY)** and **[Parroquia Cumbayá](https://share.google/snGW23RiW24PWxadm)** neighborhoods for convenient access to the conference venue and a comfortable experience in Quito.
 
 #### Cumbayá
 
@@ -135,13 +130,6 @@ Quito, the capital of Ecuador, sits at **2,850 meters (9,350 feet)** above sea l
 
 While many people in the tourism industry speak English, we recommend learning basic Spanish phrases for smoother interactions in local restaurants, shops, and when using public transportation.
 
-**Useful Phrases:**
-- Hola (Hello)
-- Gracias (Thank you)
-- Por favor (Please)
-- ¿Dónde está...? (Where is...?)
-- ¿Cuánto cuesta? (How much does it cost?)
-
 ---
 
 ### Safety
@@ -213,13 +201,7 @@ Most restaurants, hotels, and shops accept credit and debit cards. However, smal
 
 ### Water
 
-⚠️ **Important:** Tap water in Quito is **NOT safe for drinking** due to potential contamination.
-
-**Recommendations:**
-- Drink only bottled water (widely available, $0.50-1 per liter)
-- Use bottled water for brushing teeth
-- Avoid ice in street food drinks
-- Bottled water is available at all hotels, restaurants, and convenience stores
+**Note:** Tap water in Quito is treated and drinkable. However, if you have a sensitive stomach or are not accustomed to the local water, bottled water is recommended as a precaution.
 
 ---
 
@@ -303,12 +285,6 @@ Walking distance or short taxi ride (5-15 minutes)
 - **Google Maps:** Reliable for navigation and public transport directions
 
 **Safety Note:** Avoid unmarked "pirate" buses. Use only official public transportation with proper identification.
-
----
-
-### Restaurant Recommendations
-
-*Coming soon! We'll provide recommendations for restaurants near USFQ and in the Cumbayá/Iñaquito areas, featuring both international and traditional Ecuadorian cuisine.*
 
 ---
 
