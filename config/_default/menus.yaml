@@ -10,6 +10,9 @@ main:
   - name: Program
     url: /program
     weight: 20
+  - name: Venue & Travel
+    url: /venue-travel
+    weight: 22
   - name: Previous Events
     url: /previous-events
     weight: 25
@@ -33,9 +36,13 @@ footer:
     url: https://docs.google.com/forms/d/e/1FAIpQLScQp8GfLSdhmhW6mc4SggVgOa_SxYPmPGlaVLqS93Lur17ZZA/viewform
     weight: 3
   - parent: tickets
+    name: Venue & Travel
+    url: /venue-travel
+    weight: 4
+  - parent: tickets
     name: Past Events
     url: /previous-events
-    weight: 4
+    weight: 5
   - identifier: aboutus
     name: About us
     weight: 3
