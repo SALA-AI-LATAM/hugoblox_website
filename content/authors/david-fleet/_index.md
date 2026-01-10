@@ -4,7 +4,7 @@ first_name: David
 last_name: Fleet
 
 # Role/position
-role: Research Scientist, Google DeepMind and Professor, University of Toronto
+role: Research Scientist & Professor
 
 # Organizations/Affiliations
 organizations:
