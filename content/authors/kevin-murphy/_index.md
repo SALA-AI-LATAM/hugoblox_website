@@ -14,6 +14,11 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Kevin was born in Ireland, but grew up in England. He got his BA from U. Cambridge, his MEng from U. Pennsylvania, and his PhD from UC Berkeley. He then did a postdoc at MIT, and was an associate professor of computer science and statistics at the University of British Columbia in Vancouver, Canada, from 2004 to 2012. He currently manages a team of 12 researchers inside of Google DeepMind; the team works on generative models, Bayesian inference, and various other topics.
 
+interests:
+  - Generative Models
+  - Bayesian Inference
+  - Machine Learning
+
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
