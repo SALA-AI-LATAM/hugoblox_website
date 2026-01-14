@@ -1,0 +1,253 @@
+{{/* Hugo Blox: People */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: All Access Pass Required - https://hugoblox.com/sponsor/ */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $show_social := $block.design.show_social | default true }}
+{{ $show_interests := $block.design.show_interests | default false }}
+{{ $show_role := $block.design.show_role | default true }}
+
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ $title }}
+  </div>
+
+  {{ with $text }}<p class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose">{{ . }}</p>{{ end }}
+</div>
+
+
+<div class="mx-auto container max-w-6xl">
+
+  <div class="mt-14 grid grid-cols-1 items-start gap-x-8 gap-y-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-4">
+    <div class="lg:col-span-4">
+      <div
+        class="grid grid-cols-1 gap-x-8 gap-y-10 ui-not-focus-visible:outline-none sm:grid-cols-2 sm:gap-y-16 md:grid-cols-4">
+
+        {{ range $block.content.user_groups }}
+        {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
+
+        {{/* Dual-level Sort: Primary by weight, Secondary by last_name */}}
+        {{ $query = sort $query "Params.last_name" "asc" }}
+        {{ $query = sort $query "Params.weight" "asc" }}
+
+        {{if $query | and (gt (len $block.content.user_groups) 1) }}
+<!--        <div class="col-md-12">-->
+<!--          <h2 class="mb-4">{{ . | markdownify }}</h2>-->
+<!--        </div>-->
+        {{end}}
+
+        {{ range $person := $query }}
+        {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
+        {{/* Get external URL from organizations or fallback to internal bio page. */}}
+        {{ $link := "" }}
+        {{ if .Params.organizations }}
+          {{ range first 1 .Params.organizations }}
+            {{ if .url }}
+              {{ $link = .url }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if not $link }}
+          {{ with site.GetPage (printf "/authors/%s" (path.Base .File.Dir)) }}
+          {{ $link = .RelPermalink }}
+          {{ end }}
+        {{ end }}
+        <div>
+          <div class="group relative h-[17.5rem] transform overflow-hidden rounded-3xl cursor-pointer speaker-card"
+               data-first-name="{{ .Params.first_name }}"
+               data-last-name="{{ .Params.last_name }}"
+               data-role="{{ .Params.role | default "" }}"
+               data-organization="{{ with .Params.organizations }}{{ range first 1 . }}{{ .name }}{{ end }}{{ end }}"
+               data-avatar="{{ with $avatar }}{{ (.Fill "280x280 Center webp").RelPermalink }}{{ end }}"
+               data-bio="{{ .Content | plainify }}"
+               data-interests="{{ delimit .Params.interests "," }}"
+               data-external-url="{{ $link }}">
+            <div
+              class="absolute bottom-6 left-0 right-4 top-0 rounded-3xl border transition duration-300 group-hover:scale-95 xl:right-6 border-primary-300"></div>
+            <div class="absolute inset-0 bg-primary-50">
+              {{ $image := "" }}
+              {{ if $avatar }}
+                {{ $image = $avatar.Fill "280x280 Center webp" }}
+              {{ end }}
+              {{ if $image }}
+                {{/* $avatar_shape := site.Params.features.avatar.shape | default "circle" */}}
+                  <img src="{{ $image.RelPermalink }}" alt="Avatar" width="{{$image.Width}}" height="{{$image.Height}}" loading="lazy"
+                      class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      style="color:transparent">
+              {{ end }}
+            </div>
+          </div>
+
+          <h3 class="mt-8 font-display text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">
+            <span class="cursor-pointer speaker-name"
+                  data-first-name="{{ .Params.first_name }}"
+                  data-last-name="{{ .Params.last_name }}"
+                  data-role="{{ .Params.role | default "" }}"
+                  data-organization="{{ with .Params.organizations }}{{ range first 1 . }}{{ .name }}{{ end }}{{ end }}"
+                  data-avatar="{{ with $avatar }}{{ (.Fill "280x280 Center webp").RelPermalink }}{{ end }}"
+                  data-bio="{{ .Content | plainify }}"
+                  data-interests="{{ delimit .Params.interests "," }}"
+                  data-external-url="{{ $link }}">{{.Params.first_name}} {{.Params.last_name}}</span>
+          </h3>
+
+          {{ if ((and $show_role .Params.role) | and .Params.organizations) }}
+          <p class="mt-1 text-base tracking-tight text-slate-500 dark:text-slate-200">{{.Params.role}}</p>
+          <p class="mt-1 text-base tracking-tight text-slate-500 dark:text-slate-200">
+            {{ range first 1 $person.Params.organizations }}
+              {{ .name }}
+            {{ end }}
+          </p>
+          {{ end }}
+
+          {{ if and $show_interests .Params.interests }}
+          <p class="mt-1 text-base tracking-tight text-slate-600 dark:text-slate-300">{{ delimit .Params.interests ", " | markdownify }}</p>
+          {{ end }}
+
+          {{ if $show_social }}
+          <div class="text-2xl sm:text-lg pt-2">
+            {{ partial "social_links" . }}
+          </div>
+          {{ end }}
+
+          </div>
+
+    {{ end }}
+    {{ end }}
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<script>
+function showBioModal(element) {
+  const modal = document.getElementById('bioModal');
+  const modalName = document.getElementById('modalName');
+  const modalRole = document.getElementById('modalRole');
+  const modalOrg = document.getElementById('modalOrg');
+  const modalAvatar = document.getElementById('modalAvatar');
+  const modalBio = document.getElementById('modalBio');
+  const modalInterests = document.getElementById('modalInterests');
+  const modalSocial = document.getElementById('modalSocial');
+  
+  const firstName = element.dataset.firstName;
+  const lastName = element.dataset.lastName;
+  const role = element.dataset.role;
+  const organization = element.dataset.organization;
+  const avatarUrl = element.dataset.avatar;
+  const bio = element.dataset.bio;
+  const interests = element.dataset.interests;
+  const externalUrl = element.dataset.externalUrl;
+  
+  modalName.textContent = `${firstName} ${lastName}`;
+  modalRole.textContent = role;
+  modalOrg.textContent = organization;
+  modalAvatar.src = avatarUrl;
+  modalAvatar.alt = `${firstName} ${lastName}`;
+  modalBio.textContent = bio;
+  
+  // Display interests
+  if (interests && interests.trim() !== '') {
+    const interestsArray = interests.split(',').map(i => i.trim()).filter(i => i !== '');
+    if (interestsArray.length > 0) {
+      modalInterests.innerHTML = `<p class="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Research Interests:</p><p class="text-sm text-gray-600 dark:text-gray-400">${interestsArray.join(', ')}</p>`;
+    } else {
+      modalInterests.innerHTML = '';
+    }
+  } else {
+    modalInterests.innerHTML = '';
+  }
+  
+  // Add external link button if available
+  if (externalUrl && !externalUrl.startsWith('/authors/')) {
+    modalSocial.innerHTML = `<a href="${externalUrl}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">Visit Website</a>`;
+  } else {
+    modalSocial.innerHTML = '';
+  }
+  
+  modal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeBioModal() {
+  const modal = document.getElementById('bioModal');
+  modal.classList.add('hidden');
+  document.body.style.overflow = 'auto';
+}
+
+// Add event listeners when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Create modal and append to body root level
+  const modalHTML = `
+    <div id="bioModal" class="fixed inset-0 hidden flex items-center justify-center p-4" style="z-index: 10000; background-color: rgba(0, 0, 0, 0.5);">
+      <div class="bg-white dark:bg-gray-800 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex-1">
+              <h2 id="modalName" class="text-2xl font-bold text-gray-900 dark:text-white"></h2>
+              <p id="modalRole" class="text-lg text-gray-600 dark:text-gray-300 mt-1"></p>
+              <p id="modalOrg" class="text-md text-gray-500 dark:text-gray-400"></p>
+            </div>
+            <button onclick="closeBioModal()" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 text-3xl font-light ml-4">
+              &times;
+            </button>
+          </div>
+          <div class="flex items-start gap-4">
+            <img id="modalAvatar" src="" alt="Speaker Avatar" class="w-24 h-24 rounded-2xl object-cover flex-shrink-0">
+            <div class="flex-1">
+              <div id="modalBio" class="text-gray-700 dark:text-gray-300 leading-relaxed"></div>
+              <div id="modalInterests" class="mt-4"></div>
+              <div id="modalSocial" class="mt-4 flex gap-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  // Append modal to body root level to escape any stacking contexts
+  document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+  // Add click listeners to speaker cards and names
+  document.querySelectorAll('.speaker-card, .speaker-name').forEach(function(element) {
+    element.addEventListener('click', function(e) {
+      e.preventDefault();
+      showBioModal(this);
+    });
+  });
+
+  // Close modal when clicking outside
+  document.getElementById('bioModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeBioModal();
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeBioModal();
+    }
+  });
+});
+</script>
+
+<style>
+@media (max-width: 640px) {
+  #bioModal .bg-white {
+    margin: 1rem;
+    max-height: calc(100vh - 2rem);
+  }
+}
+</style>
