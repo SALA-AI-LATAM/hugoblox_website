@@ -127,9 +127,11 @@ sections:
           logos:
             - "sponsors/hopper dean-modified.png"
             - "sponsors/mbzuai_logo.png"
+            - "sponsors/USFQ-Logo.png"
         - name: "IMPACT"
           logos:
             - "sponsors/Amazon_logo.svg"
+            - "sponsors/mila_logo.png"
     design:
       spacing:
         padding: ["2rem", 0, "2rem", 0]

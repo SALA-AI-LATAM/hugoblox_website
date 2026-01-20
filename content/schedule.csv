@@ -1,7 +1,7 @@
 Time,Monday March 9,Type_Mon,Tuesday March 10,Type_Tue,Wednesday March 11,Type_Wed,Thursday March 12,Type_Thu
 9:00-9:30,Welcome remarks,welcome,Welcome remarks,welcome,Welcome remarks,welcome,Welcome remarks,welcome
-9:30-10:00,ML basics (Brayan Impatá),foundational,RL,foundational,NLP (Thamar Solorio),foundational,Hackathon presentations,hackathon
-10:00-10:30,ML basics (Brayan Impatá),foundational,RL,foundational,NLP (Thamar Solorio),foundational,Hackathon presentations,hackathon
+9:30-10:00,ML basics (Brayan Impatá),foundational,RL (Vincent Mai),foundational,NLP (Thamar Solorio),foundational,Hackathon presentations,hackathon
+10:00-10:30,ML basics (Brayan Impatá),foundational,RL (Vincent Mai),foundational,NLP (Thamar Solorio),foundational,Hackathon presentations,hackathon
 10:30-11:00,Break / Posters,break,Break / Posters,break,Break / Posters,break,Break / Posters,break
 11:00-11:30,Applied AI for Sustainability (David Rolnick),specialized,Optimization (Jose Cordova-Garcia),foundational,Adaptable Intelligence (Sara Hooker),specialized,AI for Climate (Peter Battaglia),specialized
 11:30-12:00,Applied AI for Sustainability (David Rolnick),specialized,Optimization (Jose Cordova-Garcia),foundational,Adaptable Intelligence (Sara Hooker),specialized,AI for Climate (Peter Battaglia),specialized
@@ -11,8 +11,8 @@ Time,Monday March 9,Type_Mon,Tuesday March 10,Type_Tue,Wednesday March 11,Type_W
 13:30-14:00,Vibe coding,specialized,Computer Vision (David Fleet),foundational,Post-training / RLHF (Nathan Lambert),specialized,AI & Climate (Sasha Luccioni),specialized
 14:00-14:30,Vibe coding,specialized,Computer Vision (David Fleet),foundational,Post-training / RLHF (Nathan Lambert),specialized,AI & Climate (Sasha Luccioni),specialized
 14:30-15:00,Break / Posters,break,Break / Posters,break,Break / Posters,break,Break / Posters,break
-15:00-15:30,LatamGPT (Omar Florez),specialized,Diffusion models,specialized,Human-LLM Collaboration (Luciana Benotti),specialized,Keynote (Samy Bengio),keynote
-15:30-16:00,LatamGPT (Omar Florez),specialized,Diffusion models,specialized,Human-LLM Collaboration (Luciana Benotti),specialized,Keynote (Samy Bengio),keynote
+15:00-15:30,LatamGPT (Omar Florez),specialized,Diffusion models (Vicente Ordóñez),specialized,Human-LLM Collaboration (Luciana Benotti),specialized,Keynote (Samy Bengio),keynote
+15:30-16:00,LatamGPT (Omar Florez),specialized,Diffusion models (Vicente Ordóñez),specialized,Human-LLM Collaboration (Luciana Benotti),specialized,Keynote (Samy Bengio),keynote
 16:00-16:30,Colabs/Hackathon,hackathon,Colabs/Hackathon,hackathon,Colabs/Hackathon,hackathon,Hackathon awards,hackathon
 16:30-17:00,Colabs/Hackathon,hackathon,Colabs/Hackathon,hackathon,Colabs/Hackathon,hackathon,Hackathon awards,hackathon
 17:00-17:30,Colabs/Hackathon,hackathon,Parallel panels,special,Parallel panels,special,End of event reception,special

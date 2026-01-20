@@ -9,7 +9,7 @@ role: Senior Applied Scientist
 # Organizations/Affiliations
 organizations:
   - name: Amazon
-    url: https://www.amazon.com/
+    url: https://yayaneath.github.io
 
 # Short bio (displayed in user profile at end of posts)
 bio: Brayan Impatá holds a PhD in Robotics and Machine Learning from the University of Alicante (Spain), where he specialized in robotic manipulation, computer vision, and deep learning applications. He currently works as a Senior Applied Scientist at Amazon, where he leads AI/ML research initiatives focused on developing foundation models for product data enrichment across global marketplaces, pioneering semi-supervised learning techniques, and creating innovative evaluation frameworks for model performance monitoring at scale.
@@ -24,7 +24,11 @@ interests:
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
-profiles: []
+profiles:
+  - icon: hero/globe-alt
+    url: https://yayaneath.github.io
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=JCLdiOcAAAAJ
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
