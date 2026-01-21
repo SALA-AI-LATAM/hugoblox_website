@@ -7,7 +7,7 @@ last_name: Mai
 role: Senior Research Scientist
 
 # Weight for role-based sorting (lower numbers appear first)
-weight: 10
+# weight: 10
 
 # Organizations/Affiliations
 organizations:
