@@ -6,16 +6,13 @@ last_name: Ordóñez Román
 # Role/position
 role: Associate Professor
 
-# Weight for role-based sorting (lower numbers appear first)
-weight: 10
-
 # Organizations/Affiliations
 organizations:
   - name: Rice University
     url: https://www.cs.rice.edu/~vo9/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Vicente Ordóñez Román is an Associate Professor in the Department of Computer Science at Rice University where he leads the Vision, Language, and Learning Lab and a research cluster on Closed-loop Computer Vision as part of the Ken Kennedy Institute. His research lies at the intersection of Computer Vision, Natural Language Processing and Machine Learning, focusing on developing machine learning models that can understand the real world through multiple modalities and can learn naturally from human guidance.
+bio: Vicente Ordóñez-Román is an Associate Professor in the Department of Computer Science at Rice University. His research interests lie at the intersection of computer vision, natural language processing and machine learning. His focus is on building efficient visual recognition models that can perform tasks that leverage both images and text. He received a Best Paper Award at the conference on Empirical Methods in Natural Language Processing (EMNLP) 2017 and the Best Paper Award -- Marr Prize -- at the International Conference on Computer Vision (ICCV) 2013. He has also been the recipient of an NSF CAREER Award, an IBM Faculty Award, a Google Faculty Research Award, and a Facebook Research Award. From 2016-2021, he was Assistant Professor in the Department of Computer Science at the University of Virginia. Vicente obtained his PhD in Computer Science at the University of North Carolina at Chapel Hill, an MS at Stony Brook University, and an engineering degree at the Escuela Superior Politécnica del Litoral in Ecuador. In the past, he has also been a visiting researcher at the Allen Institute for Artificial Intelligence, Adobe Research, Amazon Alexa AI and the Amazon AGI Foundations team.
 
 interests:
   - Computer Vision
@@ -38,6 +35,4 @@ user_groups:
   - ConfirmedSpeakers
 ---
 
-Vicente Ordóñez Román is an Associate Professor in the Department of Computer Science at Rice University where he leads the Vision, Language, and Learning Lab and a research cluster on Closed-loop Computer Vision as part of the Ken Kennedy Institute. His research lies at the intersection of Computer Vision, Natural Language Processing and Machine Learning. He is interested in how to develop machine learning models that can understand the real world through multiple modalities and can learn naturally from human guidance. He is generally interested in building efficient visual recognition models that can perform high-level perceptual tasks and doing so in a way that is fair, transparent, and interpretable.
-
-From 2016-2021 he was an Assistant Professor in the Department of Computer Science at the University of Virginia. In the past he has also been an Amazon Visiting Academic at the Amazon AGI Foundations team and the Alexa AI team, a visiting professor at Adobe Research and visiting researcher at the Allen Institute for Artificial Intelligence (AI2). He received his PhD in Computer Science at the University of North Carolina at Chapel Hill in 2015 advised by Prof. Tamara L. Berg.
+Vicente Ordóñez-Román is an Associate Professor in the Department of Computer Science at Rice University. His research interests lie at the intersection of computer vision, natural language processing and machine learning. His focus is on building efficient visual recognition models that can perform tasks that leverage both images and text. He received a Best Paper Award at the conference on Empirical Methods in Natural Language Processing (EMNLP) 2017 and the Best Paper Award -- Marr Prize -- at the International Conference on Computer Vision (ICCV) 2013. He has also been the recipient of an NSF CAREER Award, an IBM Faculty Award, a Google Faculty Research Award, and a Facebook Research Award. From 2016-2021, he was Assistant Professor in the Department of Computer Science at the University of Virginia. Vicente obtained his PhD in Computer Science at the University of North Carolina at Chapel Hill, an MS at Stony Brook University, and an engineering degree at the Escuela Superior Politécnica del Litoral in Ecuador. In the past, he has also been a visiting researcher at the Allen Institute for Artificial Intelligence, Adobe Research, Amazon Alexa AI and the Amazon AGI Foundations team.

@@ -32,7 +32,6 @@ profiles:
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - PastSpeakers
-  - ConfirmedSpeakers
 ---
 
 Sara Hooker is Co-founder and CEO of Adaption Labs, a startup building AI systems that can continuously adapt and learn from real-world experiences. Previously, she was VP of AI Research at Cohere, where she led Cohere Labs training small AI models for enterprise use cases. Prior to that, she was a research scientist at Google Brain working on training models that go beyond test-set accuracy to fulfill multiple criteria -- interpretable, compact, fair and robust.
