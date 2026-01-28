@@ -50,7 +50,7 @@ sections:
     content:
       items:
       - title: RIIAA 6.0 Sponsors
-        text: "Thanks to our incredible sponsors who supported RIIAA 6.0, our most recent edition. Their commitment made this transformative event possible and helped us build the strongest AI community in Latin America as we transition to SALA."
+        text: "Thanks to our sponsors who supported RIIAA 6.0, our most recent edition. Their commitment made this transformative event possible and helped us build the strongest AI community in Latin America as we transition to SALA."
         image: pastSponsors.png
     design:
       # Section background color (CSS class)

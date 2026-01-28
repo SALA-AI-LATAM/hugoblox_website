@@ -59,13 +59,13 @@ sections:
     content:
       items:
         - title: CATALYSING AI IN LATIN AMERICA
-          text: SALA brings together the Latin American artificial intelligence (AI) ecosystem. Emphasizing the interaction between actors based in Latin America and abroad, as well as the academic, government, and industrial communities, in order to catalyze the development, adaptation and use of AI in the region.
+          text: We are a catalyst for AI in Latin America, primarily through our biennial conference, connecting local AI talent and stakeholders—from academia, industry, and government—with global experts, resources, and opportunities.
           image: riiaa2024Dragon.jpg
-        - title: TRANSFORM
-          text: Looking to the future and recognizing an increasingly transformative role for AI, SALA is organized by a group of academics and professionals from Latin American countries, seeking to bring together existing communities and groups in the field. This meeting aims to be an important complement to other conferences, emphasizing the interaction between groups based both in Latin America and abroad, as well as between the communities dedicated to research and practice.
+        - title: BUILDING COMMUNITY
+          text: Our event brings together a global mix of students, academics, entrepreneurs, and policy leaders from over 20 countries, primarily from Latin America and beyond. Formerly called RIIAA, the organization has held 7 annual conferences in Ecuador and Mexico, drawing over a thousand participants from across Latin America and building a vibrant community dedicated to sharing knowledge and collaborating on AI.
           image: riiaa2024Panel2.jpg
-        - title: LEARN
-          text: Learn from world-experts in the field of AI about a diversity of topics. SALA combines lectures with hands-on practical sessions to maximize information sharing.
+        - title: CREATING OPPORTUNITIES
+          text: Every two years, SALA brings together hundreds of undergraduate and graduate students from all over Latin America. Participants get to hear from renowned AI researchers and leaders; participate in a summit-wide hackathon to tackle real-world challenges, with mentorship from top experts; and connect with peers, pioneers, and future employers from across academia and industry.
           image: jose2024.jpg
           #button:
           #  text: Get Tickets
