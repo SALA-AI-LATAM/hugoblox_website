@@ -66,3 +66,34 @@
 .page-header .article-metadata {
   display: none !important;
 }
+
+/* Hide social sharing buttons and page navigation at bottom */
+.article-footer,
+.page-footer,
+.share-box,
+[class*="share"],
+.article-navigation,
+.page-navigation,
+nav[class*="navigation"],
+/* Target social media icon links */
+a[aria-label*="Share"],
+a[aria-label*="X"],
+a[aria-label*="Facebook"],
+a[aria-label*="Email"],
+a[aria-label*="LinkedIn"],
+a[aria-label*="WhatsApp"],
+/* Hide all icon button links in flex containers at page bottom */
+.flex.justify-center a[class*="icon"],
+.flex.justify-center a svg,
+/* Hide date navigation */
+time,
+a time {
+  display: none !important;
+}
+
+/* Hide the entire bottom section with social icons and date */
+main > div:last-child,
+article + div,
+.prose + div {
+  display: none !important;
+}

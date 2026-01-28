@@ -198,46 +198,6 @@ Visit [Quito Tourism Official Website](https://www.quito.com.ec/) for the latest
 
 ---
 
-### Public Transportation
-
-Quito has an affordable and efficient public transportation system, particularly effective for north-south travel through the city.
-
-#### Transportation Card
-
-**Tarjeta de Transporte:** Reloadable card for all public transport  
-**Cost:** $5 initial purchase (includes first credit)  
-**Where to Buy:** Metro stations, bus terminals, authorized vendors
-
-#### Transportation Options
-
-| Type | Route | Cost | Frequency | Notes |
-|------|-------|------|-----------|-------|
-| **Metro (Line 1)** | Quitumbe (south) to El Labrador (north) | $0.35-0.80 | Every 5 minutes | Modern, safe, clean; opened in 2023 |
-| **Trolleybus (Trole)** | North-south electric buses | $0.35 | Frequent | Dedicated lanes; crowded at peak hours |
-| **Ecovía** | Bus rapid transit system | $0.35 | Frequent | Efficient for north-south travel |
-| **Regular Buses** | Extensive city network | $0.35 | Varies | Pay with card or cash |
-
-#### Getting to USFQ
-
-**From Historic Center:**  
-Take Metro or bus to northern Quito, then taxi/Uber to Cumbayá (Total: 45-60 minutes)
-
-**From Iñaquito Area:**  
-Direct taxi/Uber to USFQ (10-20 minutes)
-
-**From Cumbayá Hotels:**  
-Walking distance or short taxi ride (5-15 minutes)
-
-#### Transportation Apps
-
-- **Moovit:** Download for real-time route planning and bus schedules
-- **Uber/Cabify:** Ride-hailing services
-- **Google Maps:** Reliable for navigation and public transport directions
-
-**Safety Note:** Avoid unmarked "pirate" buses. Use only official public transportation with proper identification.
-
----
-
 ### Additional Resources
 
 **Conference Contact:**  
