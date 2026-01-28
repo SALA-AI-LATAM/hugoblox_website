@@ -1,6 +1,7 @@
 ---
 title: Venue & Travel
 type: page
+reading_time: false
 
 design:
   spacing: "6rem"
@@ -8,8 +9,7 @@ design:
 
 ## Venue
 
-**Main venue:** Universidad San Francisco de Quito - Campus Cumbayá
-
+**Main venue:** [Universidad San Francisco de Quito - Campus Cumbayá](https://share.google/z7NibBB9aTVXcUvSi)
 **Main conference room:** Teatro Shakespeare, Paseo San Francisco
 
 ---

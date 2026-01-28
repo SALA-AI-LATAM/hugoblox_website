@@ -55,3 +55,14 @@
 .dark #confirmed-speakers .dark\:text-white {
   color: rgb(212, 212, 216) !important; /* dark:text-primary-300 equivalent */
 }
+
+/* Hide reading time and date on pages */
+.article-metadata,
+.article-dates,
+.reading-time,
+[class*="reading"],
+[class*="min-read"],
+.page-header time,
+.page-header .article-metadata {
+  display: none !important;
+}

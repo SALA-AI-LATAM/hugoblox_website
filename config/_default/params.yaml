@@ -74,6 +74,11 @@ locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
 
+# Features
+features:
+  reading_time:
+    enable: false
+
 # Extensions
   plugins_css: ["custom"]
 extensions:
