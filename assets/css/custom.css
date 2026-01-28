@@ -67,33 +67,24 @@
   display: none !important;
 }
 
-/* Hide social sharing buttons and page navigation at bottom */
-.article-footer,
-.page-footer,
-.share-box,
-[class*="share"],
-.article-navigation,
-.page-navigation,
-nav[class*="navigation"],
-/* Target social media icon links */
-a[aria-label*="Share"],
-a[aria-label*="X"],
-a[aria-label*="Facebook"],
-a[aria-label*="Email"],
-a[aria-label*="LinkedIn"],
-a[aria-label*="WhatsApp"],
-/* Hide all icon button links in flex containers at page bottom */
-.flex.justify-center a[class*="icon"],
-.flex.justify-center a svg,
-/* Hide date navigation */
-time,
-a time {
+/* Hide social sharing buttons and date navigation at end of article */
+/* Target the specific navigation link structure */
+a.group.flex.no-underline[href="/admin/"],
+a.group.flex.no-underline {
   display: none !important;
 }
 
-/* Hide the entire bottom section with social icons and date */
-main > div:last-child,
-article + div,
-.prose + div {
+/* Hide social sharing buttons with SVG icons */
+.flex.justify-center svg,
+.flex.justify-center > a,
+div:has(> svg[viewBox="0 0 512 512"]) {
+  display: none !important;
+}
+
+/* Hide parent container if it only contains these elements */
+main > .flex.justify-center,
+article > .flex.justify-center,
+.prose + .flex.justify-center,
+main > div > .flex.justify-center {
   display: none !important;
 }
