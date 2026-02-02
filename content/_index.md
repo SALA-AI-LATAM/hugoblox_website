@@ -131,7 +131,7 @@ sections:
         - name: "IMPACT"
           logos:
             - "sponsors/Amazon_logo.svg"
-            - "sponsors/mila_logo.png"
+            - "sponsors/Mila-logo.webp"
     design:
       spacing:
         padding: ["2rem", 0, "2rem", 0]

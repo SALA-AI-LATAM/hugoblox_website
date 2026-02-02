@@ -48,22 +48,17 @@
         {{end}}
         
         {{/* Container for this tier's logos - spans all columns */}}
-        {{/* Set logo size based on tier */}}
-        {{ $maxWidth := "250px" }}
-        {{ $maxHeight := "100px" }}
+        {{/* Set logo height based on tier - width will be auto */}}
+        {{ $logoHeight := "80px" }}
         {{ $tierNameLower := lower .name }}
         {{ if eq $tierNameLower "visionary" }}
-          {{ $maxWidth = "400px" }}
-          {{ $maxHeight = "160px" }}
+          {{ $logoHeight = "120px" }}
         {{ else if eq $tierNameLower "pioneer" }}
-          {{ $maxWidth = "350px" }}
-          {{ $maxHeight = "140px" }}
+          {{ $logoHeight = "100px" }}
         {{ else if eq $tierNameLower "catalyst" }}
-          {{ $maxWidth = "300px" }}
-          {{ $maxHeight = "120px" }}
+          {{ $logoHeight = "90px" }}
         {{ else if eq $tierNameLower "impact" }}
-          {{ $maxWidth = "250px" }}
-          {{ $maxHeight = "100px" }}
+          {{ $logoHeight = "80px" }}
         {{ end }}
         <div class="flex flex-wrap items-center justify-center gap-x-32 gap-y-12 md:gap-x-16 lg:gap-x-32" style="grid-column: 1 / -1;">
           {{/* Logo items */}}
@@ -75,8 +70,8 @@
               {{ if not $isSVG }}
                 {{ $image = $image.Fit "400x400 webp drawing" }}
               {{ end }}
-              <div class="flex items-center justify-center" style="max-width: {{ $maxWidth }}; max-height: {{ $maxHeight }};">
-                <img data-nimg="1" decoding="async" loading="lazy" style="color:transparent; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" src="{{$image.RelPermalink}}" alt="logo" {{if not $isSVG}}width="{{$image.Width}}" height="{{$image.Height}}"{{end}}>
+              <div class="flex items-center justify-center">
+                <img data-nimg="1" decoding="async" loading="lazy" style="color:transparent; height: {{ $logoHeight }}; width: auto; object-fit: contain;" src="{{$image.RelPermalink}}" alt="logo" {{if not $isSVG}}width="{{$image.Width}}" height="{{$image.Height}}"{{end}}>
               </div>
             {{ end }}
           {{ end }}
