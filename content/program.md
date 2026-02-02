@@ -21,25 +21,42 @@ sections:
         </p>
         
         <style>
+        /* Ensure parent containers don't constrain width */
+        #agenda .prose,
+        #agenda .max-w-prose,
+        #agenda > div {
+          max-width: none !important;
+        }
+        
         .sala-agenda {
-          margin: 2rem 0;
-          overflow: hidden;
+          margin: 2rem auto;
+          overflow-x: auto;
+          overflow-y: visible;
           border-radius: 16px;
           box-shadow: 0 8px 32px rgba(0,0,0,0.12);
           background: white;
           border: 1px solid rgba(255,255,255,0.2);
+          padding: 0;
+          max-width: calc(100% - 4rem);
+        }
+        
+        @media (max-width: 767px) {
+          .sala-agenda {
+            margin: 1rem auto;
+            max-width: calc(100% - 2rem);
+          }
         }
         
         .agenda-table {
           width: 100%;
-          min-width: 800px;
+          min-width: 1200px;
           border-collapse: separate;
           border-spacing: 0;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
           font-size: 0.95rem;
-          overflow-x: auto;
           border: 1px solid #e5e7eb;
           border-radius: 16px;
+          table-layout: fixed;
         }
         
         .agenda-table th {
@@ -57,13 +74,16 @@ sections:
         
         .agenda-table th:first-child {
           background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-          width: 120px;
-          min-width: 120px;
+          width: 140px;
           border-top-left-radius: 15px;
         }
         
         .agenda-table th:last-child {
           border-top-right-radius: 15px;
+        }
+        
+        .agenda-table th:not(:first-child) {
+          width: 25%;
         }
         
         .agenda-table td {
@@ -80,8 +100,7 @@ sections:
           font-weight: 600;
           color: #2c3e50;
           white-space: nowrap;
-          width: 120px;
-          min-width: 120px;
+          width: 140px;
         }
         
         .agenda-table td:last-child {
@@ -155,10 +174,13 @@ sections:
           border-color: #f0f0f0;
         }
         
+        .agenda-table td strong {
+          color: #374151;
+        }
+        
         /* Mobile Card Layout */
         @media (max-width: 767px) {
           .sala-agenda {
-            margin: 1rem -1rem;
             border-radius: 0;
             background: transparent;
             box-shadow: none;
@@ -303,8 +325,8 @@ sections:
           }
           
           .session-speaker {
-            font-style: italic;
-            color: #6b7280;
+            font-weight: 600;
+            color: #374151;
             font-size: 0.9rem;
             margin-top: 0.25rem;
           }
@@ -389,7 +411,7 @@ sections:
           }
           
           .agenda-table {
-            min-width: 700px; /* Reduced from 800px */
+            min-width: 900px;
             font-size: 0.85rem;
           }
           
@@ -620,7 +642,7 @@ sections:
               }
               
               if (sessionInfo.speaker) {
-                td.innerHTML = `${sessionInfo.title}<br><em>(${sessionInfo.speaker})</em>`;
+                td.innerHTML = `${sessionInfo.title}<br><strong>${sessionInfo.speaker}</strong>`;
               } else {
                 td.textContent = sessionInfo.title;
               }
@@ -717,7 +739,7 @@ sections:
               if (sessionInfo.speaker) {
                 const sessionSpeaker = document.createElement('div');
                 sessionSpeaker.className = 'session-speaker';
-                sessionSpeaker.textContent = `(${sessionInfo.speaker})`;
+                sessionSpeaker.textContent = sessionInfo.speaker;
                 sessionContent.appendChild(sessionSpeaker);
               }
               
@@ -790,7 +812,7 @@ sections:
         });
         </script>
 
-        <div class="agenda-legend" style="margin-top: 1.5rem; padding: 2rem; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid rgba(255,255,255,0.2);">
+        <div class="agenda-legend" style="margin: 1.5rem auto 2rem; padding: 2rem; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid rgba(255,255,255,0.2); max-width: calc(100% - 4rem);">
           <h4 style="margin-bottom: 1.5rem; color: #2c3e50; font-weight: 600; font-size: 1.1rem;">Session Types:</h4>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; font-size: 0.95rem;">
             <div style="padding: 1rem; background: #fef3e2; color: #9a3412; border-radius: 12px; border: 1px solid #fed7aa; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">📚 Foundational Sessions</div>
