@@ -19,14 +19,52 @@
     <div class="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
       {{/* Loop through each tier */}}
       {{ range $block.content.tiers }}
-        {{/* Tier title spans all columns */}}
+        {{/* Tier title spans all columns with dynamic styling based on tier name */}}
         {{ with .name }}
-        <h3 class="text-center font-semibold text-lg tracking-widest mb-2 mt-6 first:mt-0 text-primary-700 dark:text-primary-500 uppercase" style="grid-column: 1 / -1;">
+        {{ $fontSize := "1.5rem" }}
+        {{ $fontWeight := "600" }}
+        {{ $color := "#6b7280" }}
+        {{ $tierName := lower . }}
+        {{ if eq $tierName "visionary" }}
+          {{ $fontSize = "2.5rem" }}
+          {{ $fontWeight = "700" }}
+          {{ $color = "#f59e0b" }}
+        {{ else if eq $tierName "pioneer" }}
+          {{ $fontSize = "2.25rem" }}
+          {{ $fontWeight = "700" }}
+          {{ $color = "#2563eb" }}
+        {{ else if eq $tierName "catalyst" }}
+          {{ $fontSize = "2.25rem" }}
+          {{ $fontWeight = "700" }}
+          {{ $color = "#9333ea" }}
+        {{ else if eq $tierName "impact" }}
+          {{ $fontSize = "2rem" }}
+          {{ $fontWeight = "600" }}
+          {{ $color = "#0d9488" }}
+        {{ end }}
+        <h3 class="text-center tracking-widest mb-4 mt-8 first:mt-0 uppercase" style="grid-column: 1 / -1; font-size: {{ $fontSize }}; font-weight: {{ $fontWeight }}; color: {{ $color }};">
           {{ . }}
         </h3>
         {{end}}
         
         {{/* Container for this tier's logos - spans all columns */}}
+        {{/* Set logo size based on tier */}}
+        {{ $maxWidth := "250px" }}
+        {{ $maxHeight := "100px" }}
+        {{ $tierNameLower := lower .name }}
+        {{ if eq $tierNameLower "visionary" }}
+          {{ $maxWidth = "400px" }}
+          {{ $maxHeight = "160px" }}
+        {{ else if eq $tierNameLower "pioneer" }}
+          {{ $maxWidth = "350px" }}
+          {{ $maxHeight = "140px" }}
+        {{ else if eq $tierNameLower "catalyst" }}
+          {{ $maxWidth = "300px" }}
+          {{ $maxHeight = "120px" }}
+        {{ else if eq $tierNameLower "impact" }}
+          {{ $maxWidth = "250px" }}
+          {{ $maxHeight = "100px" }}
+        {{ end }}
         <div class="flex flex-wrap items-center justify-center gap-x-32 gap-y-12 md:gap-x-16 lg:gap-x-32" style="grid-column: 1 / -1;">
           {{/* Logo items */}}
           {{ range .logos }}
@@ -37,7 +75,7 @@
               {{ if not $isSVG }}
                 {{ $image = $image.Fit "400x400 webp drawing" }}
               {{ end }}
-              <div class="flex items-center justify-center" style="max-width: 250px; max-height: 100px;">
+              <div class="flex items-center justify-center" style="max-width: {{ $maxWidth }}; max-height: {{ $maxHeight }};">
                 <img data-nimg="1" decoding="async" loading="lazy" style="color:transparent; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" src="{{$image.RelPermalink}}" alt="logo" {{if not $isSVG}}width="{{$image.Width}}" height="{{$image.Height}}"{{end}}>
               </div>
             {{ end }}
