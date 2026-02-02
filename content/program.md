@@ -176,6 +176,53 @@ sections:
         
         .agenda-table td strong {
           color: #374151;
+          cursor: pointer;
+          position: relative;
+          text-decoration: underline;
+          text-decoration-style: dotted;
+          text-decoration-color: #9ca3af;
+        }
+        
+        .agenda-table td strong:hover {
+          color: #1f2937;
+        }
+        
+        /* Tooltip styles */
+        .speaker-tooltip {
+          position: fixed;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+          padding: 1.25rem;
+          max-width: 320px;
+          z-index: 1000;
+          border: 1px solid #e5e7eb;
+          pointer-events: none;
+          opacity: 0;
+          transition: opacity 0.2s ease;
+        }
+        
+        .speaker-tooltip.show {
+          opacity: 1;
+        }
+        
+        .speaker-tooltip-name {
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: #1f2937;
+          margin-bottom: 0.25rem;
+        }
+        
+        .speaker-tooltip-role {
+          font-size: 0.9rem;
+          color: #6b7280;
+          margin-bottom: 0.75rem;
+        }
+        
+        .speaker-tooltip-bio {
+          font-size: 0.875rem;
+          line-height: 1.5;
+          color: #374151;
         }
         
         /* Mobile Card Layout */
@@ -642,7 +689,7 @@ sections:
               }
               
               if (sessionInfo.speaker) {
-                td.innerHTML = `${sessionInfo.title}<br><strong>${sessionInfo.speaker}</strong>`;
+                td.innerHTML = `${sessionInfo.title}<br><strong data-speaker="${sessionInfo.speaker}">${sessionInfo.speaker}</strong>`;
               } else {
                 td.textContent = sessionInfo.title;
               }
@@ -788,6 +835,128 @@ sections:
           });
         }
 
+        // Speaker bio data mapping
+        const speakerBios = {
+          'Brayan Impatá': {
+            role: 'Senior Applied Scientist at Amazon',
+            bio: 'Brayan Impatá holds a PhD in Robotics and Machine Learning from the University of Alicante (Spain). He currently works as a Senior Applied Scientist at Amazon, where he leads AI/ML research initiatives focused on developing foundation models for product data enrichment across global marketplaces.'
+          },
+          'Vincent Mai': {
+            role: 'Senior Research Scientist at LawZero',
+            bio: 'Vincent Mai is a Senior Research Scientist at LawZero, the AI Safety organization founded by Yoshua Bengio. With a PhD from Mila, Vincent has extensively worked at the intersection of deep learning and physical systems.'
+          },
+          'Thamar Solorio': {
+            role: 'Professor at MBZUAI',
+            bio: 'Thamar Solorio is a Professor at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI) and formerly a Professor at the University of Houston. Her research focuses on natural language processing, particularly in multilingual and low-resource settings.'
+          },
+          'David Rolnick': {
+            role: 'Assistant Professor at McGill University & Mila',
+            bio: 'David Rolnick is an Assistant Professor at McGill University and co-founder of Climate Change AI. His research focuses on applying machine learning to address climate change, including applications in agriculture, energy systems, and climate modeling.'
+          },
+          'Jose Cordova-Garcia': {
+            role: 'Senior Applied Scientist at Amazon',
+            bio: 'Jose Cordova-Garcia is a Senior Applied Scientist at Amazon working on optimization and machine learning applications for large-scale systems.'
+          },
+          'Peter Battaglia': {
+            role: 'Research Director at Google DeepMind',
+            bio: 'Peter Battaglia is a Research Director at Google DeepMind, where he leads research on graph neural networks and structured approaches to deep learning. He is known for his work on relational reasoning and combinatorial optimization.'
+          },
+          'David Fleet': {
+            role: 'Research Scientist at Google DeepMind & Professor at University of Toronto',
+            bio: 'David Fleet is a Research Scientist at Google DeepMind and a Professor in the Department of Computer Science at the University of Toronto. His research interests span computer vision, machine learning, and image processing, with particular focus on motion analysis, visual tracking, and generative models.'
+          },
+          'Nathan Lambert': {
+            role: 'Senior Research Scientist at Allen Institute for AI',
+            bio: 'Nathan Lambert is a Senior Research Scientist and post-training lead at the Allen Institute for AI focusing on building open language models. He founded and operates Interconnects.ai to increase transparency and understanding of current AI models and systems.'
+          },
+          'Sasha Luccioni': {
+            role: 'Research Scientist & Climate Lead at Hugging Face',
+            bio: 'Sasha Luccioni is a Research Scientist and Climate Lead at Hugging Face, where she leads work on evaluating and mitigating the environmental impacts of AI models and datasets. She holds a PhD in Computer Science from Université de Montréal.'
+          },
+          'Samy Bengio': {
+            role: 'Senior Director, AI and Machine Learning Research at Apple',
+            bio: 'Samy Bengio is a Canadian computer scientist, Senior Director of AI and Machine Learning Research at Apple and a former long-time scientist at Google known for leading a large group of researchers working in machine learning including adversarial settings.'
+          },
+          'Omar Florez': {
+            role: 'Team Lead for Pre-Training of LatamGPT at CENIA',
+            bio: 'Dr. Omar Florez is a machine learning researcher focused on the efficient training of large-scale foundation models. He is a team lead on the LatamGPT project, the first foundational large language model trained in Latin America (70B parameters, 300B tokens). He spent over a decade in Silicon Valley as a research scientist at Twitter Cortex, Intel Labs, and Capital One.'
+          },
+          'Vicente Ordóñez': {
+            role: 'Associate Professor at Rice University',
+            bio: 'Vicente Ordóñez-Román is an Associate Professor in the Department of Computer Science at Rice University. His research interests lie at the intersection of computer vision, natural language processing and machine learning. He has received Best Paper Awards at EMNLP 2017 and ICCV 2013, and is the recipient of an NSF CAREER Award.'
+          },
+          'Luciana Benotti': {
+            role: 'Professor of Computer Science at Universidad Nacional de Córdoba',
+            bio: 'Luciana Benotti is a Professor of Computer Science at Universidad Nacional de Córdoba, Argentina, and a researcher at CONICET. She specializes in Natural Language Processing and Human-Computer Interaction, with a focus on dialogue systems and computational linguistics.'
+          }
+        };
+        
+        // Create tooltip element
+        let tooltip = null;
+        
+        function createTooltip() {
+          if (!tooltip) {
+            tooltip = document.createElement('div');
+            tooltip.className = 'speaker-tooltip';
+            document.body.appendChild(tooltip);
+          }
+        }
+        
+        function showTooltip(speakerName, event) {
+          const bioData = speakerBios[speakerName];
+          if (!bioData) return;
+          
+          createTooltip();
+          
+          tooltip.innerHTML = `
+            <div class="speaker-tooltip-name">${speakerName}</div>
+            <div class="speaker-tooltip-role">${bioData.role}</div>
+            <div class="speaker-tooltip-bio">${bioData.bio}</div>
+          `;
+          
+          // Position tooltip
+          const rect = event.target.getBoundingClientRect();
+          const tooltipWidth = 320;
+          const tooltipHeight = tooltip.offsetHeight || 200;
+          
+          let left = rect.left + (rect.width / 2) - (tooltipWidth / 2);
+          let top = rect.bottom + 10;
+          
+          // Adjust if tooltip goes off screen
+          if (left + tooltipWidth > window.innerWidth - 20) {
+            left = window.innerWidth - tooltipWidth - 20;
+          }
+          if (left < 20) {
+            left = 20;
+          }
+          
+          // Show above if not enough space below
+          if (top + tooltipHeight > window.innerHeight - 20) {
+            top = rect.top - tooltipHeight - 10;
+          }
+          
+          tooltip.style.left = `${left}px`;
+          tooltip.style.top = `${top}px`;
+          tooltip.classList.add('show');
+        }
+        
+        function hideTooltip() {
+          if (tooltip) {
+            tooltip.classList.remove('show');
+          }
+        }
+        
+        // Add event listeners for speaker names
+        function attachSpeakerHoverEvents() {
+          document.querySelectorAll('strong[data-speaker]').forEach(element => {
+            element.addEventListener('mouseenter', (e) => {
+              showTooltip(element.getAttribute('data-speaker'), e);
+            });
+            
+            element.addEventListener('mouseleave', hideTooltip);
+          });
+        }
+        
         // Load and process schedule
         document.addEventListener('DOMContentLoaded', async function() {
           try {
@@ -801,6 +970,9 @@ sections:
             
             generateTable(scheduleData);
             generateMobileCards(scheduleData);
+            
+            // Attach hover events after table is generated
+            attachSpeakerHoverEvents();
           } catch (error) {
             console.error('Error loading schedule:', error);
             // Fallback message
