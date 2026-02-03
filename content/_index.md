@@ -128,6 +128,7 @@ sections:
             - "sponsors/hopper dean-modified.png"
             - "sponsors/mbzuai_logo.png"
             - "sponsors/USFQ-Logo.png"
+            - "sponsors/Adaption_Logo.png"
         - name: "IMPACT"
           logos:
             - "sponsors/Amazon_logo.svg"

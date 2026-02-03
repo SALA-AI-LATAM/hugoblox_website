@@ -49,16 +49,16 @@
         
         {{/* Container for this tier's logos - spans all columns */}}
         {{/* Set logo height based on tier - width will be auto */}}
-        {{ $logoHeight := "80px" }}
+        {{ $logoHeight := "60px" }}
         {{ $tierNameLower := lower .name }}
         {{ if eq $tierNameLower "visionary" }}
           {{ $logoHeight = "120px" }}
         {{ else if eq $tierNameLower "pioneer" }}
           {{ $logoHeight = "100px" }}
         {{ else if eq $tierNameLower "catalyst" }}
-          {{ $logoHeight = "90px" }}
-        {{ else if eq $tierNameLower "impact" }}
           {{ $logoHeight = "80px" }}
+        {{ else if eq $tierNameLower "impact" }}
+          {{ $logoHeight = "50px" }}
         {{ end }}
         <div class="flex flex-wrap items-center justify-center gap-x-32 gap-y-12 md:gap-x-16 lg:gap-x-32" style="grid-column: 1 / -1;">
           {{/* Logo items */}}
