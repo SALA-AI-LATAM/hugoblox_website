@@ -10,7 +10,7 @@ design:
 ## Venue
 
 **Main venue:** [Universidad San Francisco de Quito - Campus Cumbayá](https://share.google/z7NibBB9aTVXcUvSi)
-**Main conference room:** Teatro Shakespeare, Paseo San Francisco
+**Main conference room:** [Teatro Shakespeare](https://maps.app.goo.gl/sTRA8gVfEu87jXqC7), Paseo San Francisco
 
 ---
 
