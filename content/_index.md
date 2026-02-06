@@ -126,7 +126,7 @@ sections:
         - name: "CATALYST"
           logos:
             - "sponsors/hopper dean-modified.png"
-            - "sponsors/mbzuai_logo.png"
+            - "sponsors/The_2025_MBZUAI_logo.png"
             - "sponsors/USFQ-Logo.png"
             - "sponsors/Adaption_Logo.png"
         - name: "IMPACT"
