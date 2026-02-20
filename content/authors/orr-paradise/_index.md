@@ -4,11 +4,11 @@ first_name: Orr
 last_name: Paradise
 
 # Role/position
-role: Research Scientist
+role: Theory of Computation group
 
 # Organizations/Affiliations
 organizations:
-  - name: TBD
+  - name: UC Berkeley
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
