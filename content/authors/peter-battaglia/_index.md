@@ -32,8 +32,8 @@ profiles:
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-  - ConfirmedSpeakers
+#user_groups:
+#  - ConfirmedSpeakers
 ---
 
 Peter Battaglia is a Senior Director of Research at Google DeepMind, where he leads initiatives at the intersection of AI and environmental sustainability. His work is best known for advancing the use of graph neural networks and structured models to enable machines to reason about physics and complex systems. Battaglia's team developed WeatherNext, Google's family of state-of-the-art AI models for weather forecasting. His broader aim is to make transformative AI innovations, and apply them to solving the most critical real-world challenges.

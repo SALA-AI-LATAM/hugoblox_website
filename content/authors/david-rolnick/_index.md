@@ -31,8 +31,8 @@ profiles:
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-  - ConfirmedSpeakers
+#user_groups:
+#  - ConfirmedSpeakers
 ---
 
 David Rolnick is an Assistant Professor in the School of Computer Science at McGill University and a Canada CIFAR AI Chair at Mila Quebec AI Institute. His work focuses on applications of machine learning to help address climate change, as well as on deep learning theory and algorithmic fairness. He is a Co-founder and Chair of Climate Change AI and Scientific Co-director of Sustainability in the Digital Age.
