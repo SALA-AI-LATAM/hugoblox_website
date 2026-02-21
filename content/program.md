@@ -620,7 +620,7 @@ sections:
           return { title: sessionText.trim(), speaker: null };
         }
 
-        // Generate desktop table with rowspan
+        // Generate desktop table with per-column rowspan
         function generateTable(scheduleData) {
           const tbody = document.getElementById('schedule-tbody');
           if (!tbody) return;
@@ -629,63 +629,87 @@ sections:
           
           const days = ['Monday March 9', 'Tuesday March 10', 'Wednesday March 11', 'Thursday March 12'];
           const typeKeys = ['Type_Mon', 'Type_Tue', 'Type_Wed', 'Type_Thu'];
+          const numRows = scheduleData.length;
           
-          // Track which rows are spanned (to create empty rows)
-          const spanTracker = new Array(scheduleData.length).fill(0);
+          // Pre-compute per-column rowspan and which rows are skipped per column
+          // colSpan[col][row] = number of rows this cell spans (1 = no merge)
+          // colSkip[col][row] = true if this cell is covered by a rowspan above
+          const colSpan = days.map(() => new Array(numRows).fill(1));
+          const colSkip = days.map(() => new Array(numRows).fill(false));
           
-          for (let i = 0; i < scheduleData.length; i++) {
-            // Skip if this row is spanned from above
-            if (spanTracker[i] > 0) {
-              const tr = document.createElement('tr');
-              tr.appendChild(document.createComment(' Cells spanned by rowspan above '));
-              tbody.appendChild(tr);
-              continue;
+          days.forEach((day, col) => {
+            let i = 0;
+            while (i < numRows) {
+              let span = 1;
+              while (
+                i + span < numRows &&
+                scheduleData[i + span][day] === scheduleData[i][day] &&
+                scheduleData[i + span][typeKeys[col]] === scheduleData[i][typeKeys[col]]
+              ) {
+                colSkip[col][i + span] = true;
+                span++;
+              }
+              colSpan[col][i] = span;
+              i += span;
             }
-            
+          });
+          
+          // Pre-compute time column: merge time if ALL columns merge identically
+          // Otherwise show individual 30-min slots
+          const timeSpan = new Array(numRows).fill(1);
+          const timeSkip = new Array(numRows).fill(false);
+          {
+            let i = 0;
+            while (i < numRows) {
+              // Find the minimum span across all columns for this row
+              const minSpan = Math.min(...days.map((_, col) => colSpan[col][i]));
+              // Only merge time if all columns agree on the same span
+              const allAgree = days.every((_, col) => colSpan[col][i] === minSpan);
+              
+              if (allAgree && minSpan > 1) {
+                timeSpan[i] = minSpan;
+                for (let k = 1; k < minSpan; k++) {
+                  timeSkip[i + k] = true;
+                }
+                i += minSpan;
+              } else {
+                timeSpan[i] = 1;
+                i++;
+              }
+            }
+          }
+          
+          // Build the table rows
+          for (let i = 0; i < numRows; i++) {
             const row = scheduleData[i];
             const tr = document.createElement('tr');
             
-            // Check for consecutive same sessions for rowspan
-            let rowspan = 1;
-            for (let j = i + 1; j < scheduleData.length; j++) {
-              const nextRow = scheduleData[j];
-              let allSame = true;
-              
-              for (let k = 0; k < days.length; k++) {
-                if (nextRow[days[k]] !== row[days[k]] || nextRow[typeKeys[k]] !== row[typeKeys[k]]) {
-                  allSame = false;
-                  break;
-                }
-              }
-              
-              if (allSame) {
-                rowspan++;
-                spanTracker[j] = 1; // Mark this row as spanned
-              } else {
-                break;
-              }
-            }
-            
             // Time cell
-            const timeCell = document.createElement('td');
-            if (rowspan > 1) {
-              const startTime = row.Time.split('-')[0];
-              const endTime = scheduleData[i + rowspan - 1].Time.split('-')[1];
-              timeCell.textContent = `${startTime}-${endTime}`;
-              timeCell.rowSpan = rowspan;
-            } else {
-              timeCell.textContent = row.Time;
+            if (!timeSkip[i]) {
+              const timeCell = document.createElement('td');
+              if (timeSpan[i] > 1) {
+                const startTime = row.Time.split('-')[0];
+                const endTime = scheduleData[i + timeSpan[i] - 1].Time.split('-')[1];
+                timeCell.textContent = `${startTime}-${endTime}`;
+                timeCell.rowSpan = timeSpan[i];
+              } else {
+                timeCell.textContent = row.Time;
+              }
+              tr.appendChild(timeCell);
             }
-            tr.appendChild(timeCell);
             
-            // Session cells
-            days.forEach((day, idx) => {
+            // Session cells — each column independently
+            days.forEach((day, col) => {
+              if (colSkip[col][i]) return; // covered by rowspan above
+              
               const sessionInfo = parseSession(row[day]);
               const td = document.createElement('td');
-              td.setAttribute('data-type', row[typeKeys[idx]]);
+              td.setAttribute('data-type', row[typeKeys[col]]);
               
-              if (rowspan > 1) {
-                td.rowSpan = rowspan;
+              if (colSpan[col][i] > 1) {
+                const startTime = row.Time.split('-')[0];
+                const endTime = scheduleData[i + colSpan[col][i] - 1].Time.split('-')[1];
+                td.rowSpan = colSpan[col][i];
               }
               
               if (sessionInfo.speaker) {
