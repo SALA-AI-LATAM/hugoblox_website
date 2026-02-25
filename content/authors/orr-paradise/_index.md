@@ -4,15 +4,15 @@ first_name: Orr
 last_name: Paradise
 
 # Role/position
-role: Theory of Computation group
+role: Postdoctoral Fellow
 
 # Organizations/Affiliations
 organizations:
-  - name: UC Berkeley
-    url: ''
+  - name: EPFL AI Center
+    url: https://orrp.net/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Orr Paradise is a researcher working on Applied AI for Sustainability.
+bio: Orr Paradise is a Postdoctoral Fellow at EPFL researching the theoretical foundations of provably-safe AI systems. He is also a member of the Cetacean Translation Initiative (CETI), a non-profit listening project attempting to decipher sperm whale communication.
 
 interests:
   - Artificial Intelligence
@@ -21,7 +21,9 @@ interests:
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
-profiles: []
+profiles:
+  - icon: hero/globe-alt
+    url: https://orrp.net/
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -32,4 +34,4 @@ user_groups:
   - ConfirmedSpeakers
 ---
 
-Orr Paradise is a researcher working on Applied AI for Sustainability.
+Orr Paradise is a Postdoctoral Fellow at EPFL researching the theoretical foundations of provably-safe AI systems. He is also a member of the Cetacean Translation Initiative (CETI), a non-profit listening project attempting to decipher sperm whale communication.

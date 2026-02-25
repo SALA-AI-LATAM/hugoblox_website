@@ -4,12 +4,12 @@ first_name: Francisco
 last_name: Gomez
 
 # Role/position
-role: Researcher
+role: Associate Professor
 
 # Organizations/Affiliations
 organizations:
-  - name: TBD
-    url: ''
+  - name: Universidad Nacional de Colombia
+    url: https://sites.google.com/site/fagomezj/home?authuser=0
 
 # Short bio (displayed in user profile at end of posts)
 bio: Francisco Gomez is a researcher working on AI and conservation.
@@ -21,7 +21,9 @@ interests:
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
-profiles: []
+profiles:
+  - icon: hero/globe-alt
+    url: https://sites.google.com/site/fagomezj/home?authuser=0
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
