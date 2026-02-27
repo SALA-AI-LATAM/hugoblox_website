@@ -8,7 +8,7 @@ role: Professor of Computer Science
 
 # Organizations/Affiliations
 organizations:
-  - name: Universidad Nacional de Córdoba
+  - name: Universidad Nacional de Córdoba & Fundación Via Libre
     url: https://benotti.github.io/
 
 # Short bio (displayed in user profile at end of posts)

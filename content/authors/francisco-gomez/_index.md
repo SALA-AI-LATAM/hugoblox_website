@@ -1,18 +1,18 @@
 ---
 # Display name
 first_name: Francisco
-last_name: Gomez
+last_name: Gómez
 
 # Role/position
 role: Associate Professor
 
 # Organizations/Affiliations
 organizations:
-  - name: Universidad Nacional de Colombia
+  - name: Universidad Nacional de Colombia & CERVO
     url: https://sites.google.com/site/fagomezj/home?authuser=0
 
 # Short bio (displayed in user profile at end of posts)
-bio: Francisco Gomez is a researcher working on AI and conservation.
+bio: Francisco Gómez is an Associate Professor of Mathematics at the National University of Colombia and an Adjunct Researcher at CERVO (Université Laval, Canada). His work integrates artificial intelligence, mathematical modeling, and data science to address complex societal challenges, including brain connectivity, predictive security, and computational sustainability. He develops AI-driven decision-support systems for public institutions and has contributed as an academic expert to artificial intelligence regulation in Colombia.
 
 interests:
   - Artificial Intelligence
@@ -34,4 +34,4 @@ user_groups:
   - ConfirmedSpeakers
 ---
 
-Francisco Gomez is a researcher working on AI and conservation.
+Francisco Gómez is an Associate Professor of Mathematics at the National University of Colombia and an Adjunct Researcher at CERVO (Université Laval, Canada). His work integrates artificial intelligence, mathematical modeling, and data science to address complex societal challenges, including brain connectivity, predictive security, and computational sustainability. He develops AI-driven decision-support systems for public institutions and has contributed as an academic expert to artificial intelligence regulation in Colombia.
