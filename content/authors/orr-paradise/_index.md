@@ -4,11 +4,11 @@ first_name: Orr
 last_name: Paradise
 
 # Role/position
-role: Postdoctoral Fellow
+role: Postdoctoral Fellow, Theoretical Analysis & Machine Learning
 
 # Organizations/Affiliations
 organizations:
-  - name: EPFL AI Center
+  - name: CETI & EPFL
     url: https://orrp.net/
 
 # Short bio (displayed in user profile at end of posts)
