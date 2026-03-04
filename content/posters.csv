@@ -1,0 +1,58 @@
+spot,code,title,presenter,category
+1,AA-05,Diagnóstico institucional para el diseño de un marco de trabajo de inteligencia artificial en una universidad pública ecuatoriana,Oscar,Applied AI & Data Science
+2,AA-07,Learning Smart Indicators for Financial Time-Series Dynamics,Manuel,Applied AI & Data Science
+3,AA-09,WHY DO WE NEED GENDER-SENSITIVE DATA TO MITIGATE FEMICIDAL VIOLENCE IN NUEVO LEÓN MEXICO?,Clarissa,Applied AI & Data Science
+4,AA-11,Applied AI and Digital Twins for Secure Financial Systems in Central Banking,Esthela,Applied AI & Data Science
+5,AA-16,Beyond Keywords: Enhancing Legal Retrieval with GraphRAG and Semantic Knowledge Graphs,Adrian,Applied AI & Data Science
+6,AA-18,Developing Voice-Based Telemedicine Roadmaps for Automated Mental Health Support in Latin America,Carlos,Applied AI & Data Science
+7,AA-19,Preventive monitoring system for vulnerable individuals based on vital signs and event measurements,Cynthia,Applied AI & Data Science
+8,AA-24,Core-Concept-First Adaptive Learning via Agentic Curriculum Design,Arturo,Applied AI & Data Science
+9,AA-25,Integrative multi-omics approaches for rare diseases diagnosis in admixed populations,Camila,Applied AI & Data Science
+10,AA-28,Modality Utilization Analysis of EEG–EMG Multimodal Neural Networks,Emmanuel,Applied AI & Data Science
+11,AA-39,Automatic counting of Artemia salina with computer vision assisted by a two dimensional positioner,Dari,Applied AI & Data Science
+12,AA-40,A Hybrid Agronomic and Economic Recommendation System for Potato Variety Selection in Peru,Arbués,Applied AI & Data Science
+13,AA-43,GENO-MAP: Visual Mapping of Genomic Diversity in Germplasm Collections,Rody,Applied AI & Data Science
+14,AA-47,Applied Artificial Intelligence System for Assisting the Parasitological Diagnosis of Trypanosoma cruzi Using Computer Vision,Richard,Applied AI & Data Science
+15,AA-52,AI-Driven Search for Infectious Disease Research: MPOX Case Study,María,Applied AI & Data Science
+16,AA-21,Cacao Health Detector — Autonomous Robotics for Pest Detection in Cacao Crops,,Applied AI & Data Science
+17,AA-48,wAIter: Serving Awareness — Environmental Footprint Estimator for Artificial Intelligence Models,,Applied AI & Data Science
+18,AA-242,Development and Evaluation of an AI-Driven Telemedicine System for Prenatal Healthcare,Juan Pablo,Applied AI & Data Science
+19,DL-03,Robust phoneme classification under adverse conditions using MEG data,Sharon,Deep Learning & Representation Learning
+20,DL-08,The Information Plane for Deep Reinforcement Learning: Study of the Proximal Policy Optimization Algorithm,Arthur,Deep Learning & Representation Learning
+21,DL-12,Weighted based curriculum learning applied to Image Classification,Claudia,Deep Learning & Representation Learning
+22,DL-15,Application of Deep Neural Networks for Precipitation Event Prediction Using Radar Data: A Case Study in Piura Peru,Cyndi,Deep Learning & Representation Learning
+23,DL-17,Deep Learning model for the prediction of river flows for hydroclimatological planning and management of associated risks,Boris,Deep Learning & Representation Learning
+24,DL-31,ENHANCING ALIMENTARY ACTIVITY RECOGNITION VIA DIFFUSION-BASED SYNTHETIC PRETRAINING OF CABIGRU,Elian,Deep Learning & Representation Learning
+25,DL-32,Graph Neural Networks for Soil Organic Carbon Estimation: Data-Efficient Modeling of Multimodal Spatial Dependencies,Mateo,Deep Learning & Representation Learning
+26,DL-35,Peering into the hidden lives of aquatic animals: AI-driven behavioural inference from triaxial accelerometer data,Ronny,Deep Learning & Representation Learning
+27,DL-36,Region-Based Mammography Analysis Using YOLO11 Object Detection Models,Elsy,Deep Learning & Representation Learning
+28,DL-41,Data-Driven Optimization of Execution Parameters in Bio-Inspired Clustering Algorithms Across Finance and Education Domains,Antuane,Deep Learning & Representation Learning
+29,DL-42,DeMemte,Christian,Deep Learning & Representation Learning
+30,DL-45,Improving High Frequency Texture Recovery on Remote Sensing Image Super-Resolution,Victor,Deep Learning & Representation Learning
+31,DL-48,Prediction of extreme events in climatic time series using classical bayesian and machine learning approaches,Saba,Deep Learning & Representation Learning
+32,DL-240,Simulation-Based Bayesian Inference for Chemical Reaction Networks,Arturo,Deep Learning & Representation Learning
+33,DL-241,Nathalia Bonilla,,Deep Learning & Representation Learning
+34,PE-01,Automatic Culicoides Biting Midges Classification Using Transfer Learning and Shallow Learning Techniques,Carlos,Perception (Vision + NLP)
+35,PE-27,Development of a De-identification Model for Electronic Health Records in Buenos Aires City Healthcare,María,Perception (Vision + NLP)
+36,PE-37,Evaluation of the Performance of Vector Database Management Systems in the Recovery of Audio Embeddings in Quechua,Astrid,Perception (Vision + NLP)
+37,PE-38,Speech Translation for Quechua–Spanish Medical Consultations in Rural Cusco,Yasumy,Perception (Vision + NLP)
+38,PE-44,Neural Machine Translator for Native Language Aymara,Honorio,Perception (Vision + NLP)
+39,PE-50,Deep Learning model for the prediction of river flows for hydroclimatological planning and management of associated risks,,Perception (Vision + NLP)
+40,PE-21,Modeling Crime using Graph Neural Networks: A comparison with spatio-temporal statistical models,Camila,Perception (Vision + NLP)
+41,PE-22,Criminality Analysis in Guayaquil through Topological Data Analysis (TDA) and Point Process Techniques,Edwin,Perception (Vision + NLP)
+42,PE-23,Turning wearable data into better products using Machine Learning,J. Carlos,Perception (Vision + NLP)
+43,PE-49,COMPARATIVE EVOLUTION OF AUTOMATED SYSTEMS FOR PIG SPERM MOTILITY ANALYSIS: COMMERCIAL CASA VS FREE SOFTWARE,Katty,Perception (Vision + NLP)
+44,PE-243,All For One: A Multilinguality Quest to Assist Low Resource Sign Languages,Karima,Perception (Vision + NLP)
+45,FT-10,Data centers and water: socio-environmental risks in times of digital expansion,Jamila,Foundations & Theory
+46,FT-14,On Controlling the Rumor Spreading Process,Daniel,Foundations & Theory
+47,FT-29,A Principled Multi-Objective Optimization Framework for Trustworthy AI,Aline,Foundations & Theory
+48,FT-30,Barriers and Facilitators in the Adoption of Artificial Intelligence for Business Innovation,Nathalyn,Foundations & Theory
+49,FT-33,Data centers and water: socio-environmental risks in times of digital expansion,,Foundations & Theory
+50,FT-34,From Fixed Budgets to Adaptive Allocation: Token Regulation in LLM Multi-Agent Frameworks,Eduarda,Foundations & Theory
+51,GM-02,The Rise of Generative AI Agents in LATAM,Hugo,Generative Models
+52,GM-33,Exploring Brazil's LLM Fauna: Generative AI in Brazilian Portuguese,Gabriel,Generative Models
+53,GM-34,Developing Voice-Based Telemedicine Roadmaps for Automated Mental Health Support in Latin America,,Generative Models
+54,GM-50,Self-resource allocation in multi-agent LLM systems,Alfonso,Generative Models
+55,RE-04,Young AI Leaders LATAM Coalition,Valeria,Responsible AI & Ethics
+56,RE-06,Exploring Data Distribution and Model Confidence in Rejection Inference Based Credit Scoring Methods,Athyrson,Responsible AI & Ethics
+57,RE-26,A Fair Approach for Mixture of Probabilistic Principal Component Analyzers (FR-MPPCA),Beatriz,Responsible AI & Ethics
