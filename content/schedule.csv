@@ -1,19 +1,19 @@
 Time,Monday March 9,Type_Mon,Tuesday March 10,Type_Tue,Wednesday March 11,Type_Wed,Thursday March 12,Type_Thu
 9:00-9:30,Welcome remarks,welcome,Welcome remarks,welcome,Welcome remarks,welcome,Hackathon presentations,hackathon
 9:30-10:00,ML basics (Brayan Impatá),foundational,RL (Vincent Mai),foundational,NLP (Thamar Solorio),foundational,Hackathon presentations,hackathon
-10:00-10:30,ML basics (Brayan Impatá),foundational,RL (Vincent Mai),foundational,NLP (Thamar Solorio),foundational,Break,break
-10:30-11:00,Break / Posters,break,Break / Posters,break,Break / Posters,break,AI and biology (Diego Benítez),specialized
+10:00-10:30,ML basics (Brayan Impatá),foundational,RL (Vincent Mai),foundational,NLP (Thamar Solorio),foundational,Hackathon presentations,hackathon
+10:30-11:00,Break / Posters,break,Break / Posters,break,Break / Posters,break,Break,break
 11:00-11:30,Optimization (Jose Cordova-Garcia),foundational,Computer Vision (David Fleet),foundational,LatamGPT (Omar Florez),specialized,AI and biology (Diego Benítez),specialized
 11:30-12:00,Optimization (Jose Cordova-Garcia),foundational,Computer Vision (David Fleet),foundational,LatamGPT (Omar Florez),specialized,AI and biology (Diego Benítez),specialized
 12:00-12:30,Lunch,break,Lunch,break,Lunch,break,Lunch,break
 12:30-13:00,Lunch,break,Lunch,break,Lunch,break,Lunch,break
-13:00-13:30,Lunch,break,Lunch,break,Lunch,break,AI and conservation (Francisco Gomez),specialized
-13:30-14:00,Vibe coding (Pablo Samuel Castro),specialized,Diffusion Models (Vicente Ordóñez),specialized,Post-training / RLHF (Nathan Lambert),specialized,AI and conservation (Francisco Gomez),specialized
-14:00-14:30,Vibe coding (Pablo Samuel Castro),specialized,Diffusion Models (Vicente Ordóñez),specialized,Post-training / RLHF (Nathan Lambert),specialized,Break,break
-14:30-15:00,Break / Posters,break,Break / Posters,break,Break / Posters,break,AI & Climate (Sasha Luccioni),specialized
-15:00-15:30,Applied AI for Sustainability (Orr Paradise),specialized,Valuing AI startups in Emerging Markets (Laura Montoya),specialized,Human-LLM Collaboration (Luciana Benotti),specialized,AI & Climate (Sasha Luccioni),specialized
-15:30-16:00,Applied AI for Sustainability (Orr Paradise),specialized,Valuing AI startups in Emerging Markets (Laura Montoya),specialized,Human-LLM Collaboration (Luciana Benotti),specialized,Break,break
+13:00-13:30,Lunch,break,Lunch,break,Lunch,break,Lunch,break
+13:30-14:00,Vibe coding (Pablo Samuel Castro),specialized,Diffusion Models (Vicente Ordóñez),specialized,Post-training of LLMs: RLHF (Nathan Lambert),specialized,AI for Sustainability in Latin America (Francisco Gomez),specialized
+14:00-14:30,Vibe coding (Pablo Samuel Castro),specialized,Diffusion Models (Vicente Ordóñez),specialized,Post-training of LLMs: RLHF (Nathan Lambert),specialized,AI for Sustainability in Latin America (Francisco Gomez),specialized
+14:30-15:00,Break / Posters,break,Break / Posters,break,Break / Posters,break,Break,break
+15:00-15:30,Applied AI for Sustainability (Orr Paradise),specialized,Valuing AI Startups in Emerging Markets (Laura Montoya),specialized,Human-LLM Collaboration (Luciana Benotti),specialized,AI & Climate (Sasha Luccioni),specialized
+15:30-16:00,Applied AI for Sustainability (Orr Paradise),specialized,Valuing AI Startups in Emerging Markets (Laura Montoya),specialized,Human-LLM Collaboration (Luciana Benotti),specialized,AI & Climate (Sasha Luccioni),specialized
 16:00-16:30,Hackathon presentation,hackathon,Roundtables,special,Roundtables,special,ML at Apple (Samy Bengio),keynote
 16:30-17:00,Free time for hacking!,hackathon,Roundtables,special,Roundtables,special,ML at Apple (Samy Bengio),keynote
-17:00-17:30,Free time for hacking!,hackathon,Roundtables,special,Roundtables,special,End of event reception / Hackathon awards,special
-17:30-18:00,Free time for hacking!,hackathon,Roundtables,special,Roundtables,special,End of event reception / Hackathon awards,special
+17:00-17:30,Free time for hacking!,hackathon,Roundtables,special,Roundtables,special,Hackathon awards and Google Party,special
+17:30-18:00,Free time for hacking!,hackathon,Roundtables,special,Roundtables,special,Hackathon awards and Google Party,special

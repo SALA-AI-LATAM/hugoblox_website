@@ -912,6 +912,26 @@ sections:
           'Luciana Benotti': {
             role: 'Professor of Computer Science at Universidad Nacional de Córdoba',
             bio: 'Luciana Benotti is a Professor of Computer Science at Universidad Nacional de Córdoba, Argentina, and a researcher at CONICET. She specializes in Natural Language Processing and Human-Computer Interaction, with a focus on dialogue systems and computational linguistics.'
+          },
+          'Pablo Samuel Castro': {
+            role: 'Staff Research Scientist at Google DeepMind',
+            bio: 'Pablo Samuel was born and raised in Quito, Ecuador. He obtained his PhD from McGill, focusing on Reinforcement Learning. He has been working at Google for over 13 years, and is currently a staff research scientist in Google DeepMind in Montreal, focusing on fundamental Reinforcement Learning and neuroscience research. He is also an adjunct professor at Université de Montréal and a core industry member at Mila, and is a regular advocate for increasing the LatinX representation in the research community. Aside from his interest in research/coding/AI/math, Pablo Samuel is an active musician.'
+          },
+          'Diego Benítez': {
+            role: 'Research Professor at Universidad San Francisco de Quito',
+            bio: 'Diego Benítez, with a Ph.D. and M.Sc. in Electronic Engineering from the University of Manchester (UK), leads the Department of Electronics at the Universidad San Francisco de Quito (Ecuador). He also heads the Applied Signal Processing and Machine Learning Research Group. Dr. Benítez\'s research interests encompass signal and image processing, pattern recognition, machine learning, intelligent instrumentation, and measurement systems for medical applications, energy management, security, control, and non-destructive testing. With a background as a Research Engineer at Bosch Research and Technology Center (Pittsburgh, USA), he has authored more than 160 journal articles and papers and holds 26 U.S., European, and foreign patents.'
+          },
+          'Francisco Gomez': {
+            role: 'Associate Professor at Universidad Nacional de Colombia & CERVO',
+            bio: 'Francisco Gómez is an Associate Professor of Mathematics at the National University of Colombia and an Adjunct Researcher at CERVO (Université Laval, Canada). His work integrates artificial intelligence, mathematical modeling, and data science to address complex societal challenges, including brain connectivity, predictive security, and computational sustainability. He develops AI-driven decision-support systems for public institutions and has contributed as an academic expert to artificial intelligence regulation in Colombia.'
+          },
+          'Orr Paradise': {
+            role: 'Postdoctoral Fellow at CETI & EPFL',
+            bio: 'Orr Paradise is a Postdoctoral Fellow at EPFL researching the theoretical foundations of provably-safe AI systems. He is also a member of the Cetacean Translation Initiative (CETI), a non-profit listening project attempting to decipher sperm whale communication.'
+          },
+          'Laura Montoya': {
+            role: 'Founder & CEO at Accel AI',
+            bio: 'Laura Montoya is a renowned scientist, engineer, and entrepreneur, leading groundbreaking initiatives in the realm of technology and artificial intelligence. As the CEO of Accel AI, President of LatinX in AI Org, and General Partner at Accel Impact VC, Laura is at the forefront of promoting tech impact investments and ethical AI development. She has spearheaded numerous sessions and workshops on social impact, tech diversity, and ethical AI at esteemed forums and institutions, including Google, Stanford University, and UC Berkeley. Laura\'s commitment to fostering diversity in tech is exemplified by her leadership in Latinx in AI (LXAI), which aims to create inclusive spaces and opportunities for underrepresented communities in the tech sector.'
           }
         };
         
