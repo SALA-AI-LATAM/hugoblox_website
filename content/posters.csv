@@ -1,7 +1,7 @@
 spot,code,title,presenter,category
 1,AA-05,Diagnóstico institucional para el diseño de un marco de trabajo de inteligencia artificial en una universidad pública ecuatoriana,Oscar,Applied AI & Data Science
 2,AA-07,Learning Smart Indicators for Financial Time-Series Dynamics,Manuel,Applied AI & Data Science
-3,AA-09,WHY DO WE NEED GENDER-SENSITIVE DATA TO MITIGATE FEMICIDAL VIOLENCE IN NUEVO LEÓN MEXICO?,Clarissa,Applied AI & Data Science
+3,AA-09,Why do we need gender-sensitive data to mitigate femicidal violence in Nuevo León Mexico?,Clarissa,Applied AI & Data Science
 4,AA-11,Applied AI and Digital Twins for Secure Financial Systems in Central Banking,Esthela,Applied AI & Data Science
 5,AA-16,Beyond Keywords: Enhancing Legal Retrieval with GraphRAG and Semantic Knowledge Graphs,Adrian,Applied AI & Data Science
 6,AA-18,Developing Voice-Based Telemedicine Roadmaps for Automated Mental Health Support in Latin America,Carlos,Applied AI & Data Science
@@ -22,7 +22,7 @@ spot,code,title,presenter,category
 21,DL-12,Weighted based curriculum learning applied to Image Classification,Claudia,Deep Learning & Representation Learning
 22,DL-15,Application of Deep Neural Networks for Precipitation Event Prediction Using Radar Data: A Case Study in Piura Peru,Cyndi,Deep Learning & Representation Learning
 23,DL-17,Deep Learning model for the prediction of river flows for hydroclimatological planning and management of associated risks,Boris,Deep Learning & Representation Learning
-24,DL-31,ENHANCING ALIMENTARY ACTIVITY RECOGNITION VIA DIFFUSION-BASED SYNTHETIC PRETRAINING OF CABIGRU,Elian,Deep Learning & Representation Learning
+24,DL-31,Enhancing alimentary activity recognition via diffusion-based synthetic pretraining of Cabigru,Elian,Deep Learning & Representation Learning
 25,DL-32,Graph Neural Networks for Soil Organic Carbon Estimation: Data-Efficient Modeling of Multimodal Spatial Dependencies,Mateo,Deep Learning & Representation Learning
 26,DL-35,Peering into the hidden lives of aquatic animals: AI-driven behavioural inference from triaxial accelerometer data,Ronny,Deep Learning & Representation Learning
 27,DL-36,Region-Based Mammography Analysis Using YOLO11 Object Detection Models,Elsy,Deep Learning & Representation Learning
@@ -31,7 +31,7 @@ spot,code,title,presenter,category
 30,DL-45,Improving High Frequency Texture Recovery on Remote Sensing Image Super-Resolution,Victor,Deep Learning & Representation Learning
 31,DL-48,Prediction of extreme events in climatic time series using classical bayesian and machine learning approaches,Saba,Deep Learning & Representation Learning
 32,DL-240,Simulation-Based Bayesian Inference for Chemical Reaction Networks,Arturo,Deep Learning & Representation Learning
-33,DL-241,Nathalia Bonilla,,Deep Learning & Representation Learning
+33,DL-241,,Nathalia Bonilla,Deep Learning & Representation Learning
 34,PE-01,Automatic Culicoides Biting Midges Classification Using Transfer Learning and Shallow Learning Techniques,Carlos,Perception (Vision + NLP)
 35,PE-27,Development of a De-identification Model for Electronic Health Records in Buenos Aires City Healthcare,María,Perception (Vision + NLP)
 36,PE-37,Evaluation of the Performance of Vector Database Management Systems in the Recovery of Audio Embeddings in Quechua,Astrid,Perception (Vision + NLP)
@@ -41,7 +41,7 @@ spot,code,title,presenter,category
 40,PE-21,Modeling Crime using Graph Neural Networks: A comparison with spatio-temporal statistical models,Camila,Perception (Vision + NLP)
 41,PE-22,Criminality Analysis in Guayaquil through Topological Data Analysis (TDA) and Point Process Techniques,Edwin,Perception (Vision + NLP)
 42,PE-23,Turning wearable data into better products using Machine Learning,J. Carlos,Perception (Vision + NLP)
-43,PE-49,COMPARATIVE EVOLUTION OF AUTOMATED SYSTEMS FOR PIG SPERM MOTILITY ANALYSIS: COMMERCIAL CASA VS FREE SOFTWARE,Katty,Perception (Vision + NLP)
+43,PE-49,Comparative Evolution of Automated Systems for Pig Sperm Motility Analysis: Commercial CASA vs Free Software,Katty,Perception (Vision + NLP)
 44,PE-243,All For One: A Multilinguality Quest to Assist Low Resource Sign Languages,Karima,Perception (Vision + NLP)
 45,FT-10,Data centers and water: socio-environmental risks in times of digital expansion,Jamila,Foundations & Theory
 46,FT-14,On Controlling the Rumor Spreading Process,Daniel,Foundations & Theory
