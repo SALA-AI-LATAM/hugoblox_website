@@ -16,8 +16,14 @@ sections:
     content:
       title: SALA '26 Program
       text: |
-        <p style="text-align: center; font-size: 1.1rem; color: #e5e7eb; margin-bottom: 2rem; font-weight: 500;">
+        <p style="text-align: center; font-size: 1.1rem; color: #e5e7eb; margin-bottom: 1.25rem; font-weight: 500;">
           The time zone in Quito, Ecuador is UTC-5.
+        </p>
+
+        <p style="text-align: center; margin-bottom: 2rem;">
+          <a href="/posters" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-weight: 600; font-size: 0.95rem; padding: 0.65rem 1.5rem; border-radius: 999px; text-decoration: none; box-shadow: 0 4px 14px rgba(102,126,234,0.4); transition: opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+            📋 View Poster Session →
+          </a>
         </p>
         
         <style>
@@ -87,7 +93,7 @@ sections:
         }
         
         .agenda-table td {
-          padding: 1rem;
+          padding: 0.5rem 1rem;
           border-right: 1px solid #f0f0f0;
           border-bottom: 1px solid #f0f0f0;
           text-align: center;
@@ -654,24 +660,26 @@ sections:
             }
           });
           
-          // Pre-compute time column: merge time if ALL columns merge identically
-          // Otherwise show individual 30-min slots
+          // Merge time column only when ALL columns are break-type and agree on the same span
           const timeSpan = new Array(numRows).fill(1);
           const timeSkip = new Array(numRows).fill(false);
           {
             let i = 0;
             while (i < numRows) {
-              // Find the minimum span across all columns for this row
-              const minSpan = Math.min(...days.map((_, col) => colSpan[col][i]));
-              // Only merge time if all columns agree on the same span
-              const allAgree = days.every((_, col) => colSpan[col][i] === minSpan);
-              
-              if (allAgree && minSpan > 1) {
-                timeSpan[i] = minSpan;
-                for (let k = 1; k < minSpan; k++) {
-                  timeSkip[i + k] = true;
+              const allBreak = days.every((day, col) => scheduleData[i][typeKeys[col]] === 'break');
+              if (allBreak) {
+                const minSpan = Math.min(...days.map((_, col) => colSpan[col][i]));
+                const allAgree = days.every((_, col) => colSpan[col][i] === minSpan);
+                if (allAgree && minSpan > 1) {
+                  timeSpan[i] = minSpan;
+                  for (let k = 1; k < minSpan; k++) {
+                    timeSkip[i + k] = true;
+                  }
+                  i += minSpan;
+                } else {
+                  timeSpan[i] = 1;
+                  i++;
                 }
-                i += minSpan;
               } else {
                 timeSpan[i] = 1;
                 i++;
@@ -684,7 +692,7 @@ sections:
             const row = scheduleData[i];
             const tr = document.createElement('tr');
             
-            // Time cell
+            // Time cell — merged for break rows, individual 30-min for all others
             if (!timeSkip[i]) {
               const timeCell = document.createElement('td');
               if (timeSpan[i] > 1) {
