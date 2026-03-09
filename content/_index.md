@@ -135,6 +135,7 @@ sections:
             - "sponsors/Cohere_Logo_2023.png"
             - "sponsors/Cohere-Labs.png"
             - "sponsors/Mila-logo.webp"
+            - "sponsors/logo-latam-airlines.png"
     design:
       spacing:
         padding: ["2rem", 0, "2rem", 0]
